@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+<title>ฟาร์มปูนา พระเทพ | Crab Farm Pro</title>
+<meta name="theme-color" content="#0d9488"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<meta name="apple-mobile-web-app-title" content="ฟาร์มปูนา"/>
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ecfdf5'/%3E%3Cstop offset='100%25' stop-color='%23a7f3d0'/%3E%3C/linearGradient%3E%3ClinearGradient id='ring' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2314b8a6'/%3E%3Cstop offset='100%25' stop-color='%230f766e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='36' fill='url(%23bg)'/%3E%3Ccircle cx='90' cy='78' r='56' fill='none' stroke='url(%23ring)' stroke-width='7'/%3E%3Ccircle cx='90' cy='78' r='46' fill='%230d9488'/%3E%3Cellipse cx='90' cy='88' rx='24' ry='13' fill='%2399f6e4'/%3E%3Ccircle cx='90' cy='68' r='18' fill='%23ccfbf1'/%3E%3Ccircle cx='83' cy='64' r='3.2' fill='%23134e4a'/%3E%3Ccircle cx='97' cy='64' r='3.2' fill='%23134e4a'/%3E%3Cellipse cx='90' cy='74' rx='6.5' ry='4.5' fill='%2314b8a6'/%3E%3Cpath d='M60 68c-9 4-13 15-5 18 4-7 8-11 11-14' fill='%235eead4'/%3E%3Cpath d='M120 68c9 4 13 15 5 18-4-7-8-11-11-14' fill='%235eead4'/%3E%3Cpath d='M66 94c-5 4-7 11-2 13' stroke='%23ccfbf1' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M114 94c5 4 7 11 2 13' stroke='%23ccfbf1' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Crect x='28' y='128' width='124' height='28' rx='10' fill='%230d9488'/%3E%3Ctext x='90' y='147' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='700' fill='%23ffffff'%3ECRAB FARM%3C/text%3E%3C/svg%3E"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ecfdf5'/%3E%3Ccircle cx='50' cy='40' r='28' fill='none' stroke='%230d9488' stroke-width='4'/%3E%3Ccircle cx='50' cy='40' r='22' fill='%230d9488'/%3E%3Ccircle cx='50' cy='36' r='11' fill='%23ccfbf1'/%3E%3Ccircle cx='45' cy='34' r='2' fill='%23134e4a'/%3E%3Ccircle cx='55' cy='34' r='2' fill='%23134e4a'/%3E%3Cellipse cx='50' cy='48' rx='12' ry='7' fill='%2399f6e4'/%3E%3Crect x='18' y='72' width='64' height='16' rx='6' fill='%230d9488'/%3E%3Ctext x='50' y='84' text-anchor='middle' font-family='Arial' font-size='8' font-weight='700' fill='%23fff'%3EFARM%3C/text%3E%3C/svg%3E"/>
+<link rel="manifest" href="data:application/json,%7B%22name%22%3A%22%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%9B%E0%B8%B9%E0%B8%99%E0%B8%B2%20%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%9E%22%2C%22short_name%22%3A%22%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%9B%E0%B8%B9%E0%B8%99%E0%B8%B2%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%230d9488%22%2C%22theme_color%22%3A%22%230d9488%22%2C%22orientation%22%3A%22portrait%22%7D"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f0f7f4;--card:#fff;--border:#dce8e2;--text:#14241c;--muted:#6b8176;
+  --green:#0d9488;--teal:#14b8a6;--orange:#f59e0b;--blue:#0ea5e9;--pink:#ec4899;--purple:#8b5cf6;
+  --radius:20px;--shadow:0 8px 28px rgba(13,148,136,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Noto Sans Thai',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100dvh;padding-bottom:92px}
+.header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;gap:10px;align-items:center}
+.logo-icon{width:44px;height:44px;border-radius:16px;background:linear-gradient(145deg,#5eead4,#0d9488 55%,#115e59);display:grid;place-items:center;box-shadow:0 10px 20px rgba(13,148,136,.35),inset 0 2px 4px rgba(255,255,255,.4);transform:perspective(140px) rotateX(8deg)}
+.logo-icon svg{width:28px;height:28px}
+.logo h1{font-size:1.08rem;font-weight:700}
+.logo span{font-size:.7rem;color:var(--muted);display:block}
+.badge{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;padding:6px 11px;border-radius:12px;font-size:.78rem;font-weight:600;max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.page{display:none;padding:14px 16px 22px;animation:fade .22s ease}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
+.section{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:16px 0 8px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.stat{background:#fff;border:1px solid var(--border);border-radius:18px;padding:14px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px}
+.stat.g::before{background:#0d9488}.stat.o::before{background:#f59e0b}.stat.b::before{background:#0ea5e9}.stat.p::before{background:#ec4899}.stat.v::before{background:#8b5cf6}.stat.r::before{background:#ef4444}
+.stat-l{font-size:.7rem;color:var(--muted);font-weight:500}
+.stat-v{font-size:1.4rem;font-weight:700;margin-top:2px}
+.stat-s{font-size:.66rem;color:var(--muted)}
+
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.menu-btn{border:none;border-radius:24px;padding:18px 12px;color:#fff;text-align:center;cursor:pointer;box-shadow:0 12px 28px -8px rgba(0,0,0,.3);transition:transform .15s;position:relative;overflow:hidden}
+.menu-btn:active{transform:scale(.97) translateY(2px)}
+.ic-3d{width:74px;height:74px;margin:0 auto 10px;border-radius:24px;display:grid;place-items:center;position:relative;
+  box-shadow:0 16px 32px rgba(0,0,0,.28),0 6px 12px rgba(0,0,0,.12),inset 0 3px 6px rgba(255,255,255,.55),inset 0 -5px 10px rgba(0,0,0,.14);
+  transform:perspective(240px) rotateX(12deg)}
+.ic-3d svg{width:44px;height:44px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.2))}
+.ic-3d::after{content:'';position:absolute;top:6px;left:12px;right:12px;height:40%;border-radius:16px 16px 50% 50%;background:linear-gradient(180deg,rgba(255,255,255,.55),transparent);pointer-events:none}
+.menu-btn .t{font-weight:700;font-size:.92rem}.menu-btn .d{font-size:.68rem;opacity:.9;margin-top:2px}
+.m1{background:linear-gradient(160deg,#5eead4,#0d9488 45%,#115e59)}
+.m2{background:linear-gradient(160deg,#7dd3fc,#0ea5e9 45%,#0369a1)}
+.m3{background:linear-gradient(160deg,#fcd34d,#f59e0b 45%,#b45309)}
+.m4{background:linear-gradient(160deg,#f9a8d4,#ec4899 45%,#be185d)}
+.m5{background:linear-gradient(160deg,#c4b5fd,#8b5cf6 45%,#5b21b6)}
+.m6{background:linear-gradient(160deg,#94a3b8,#475569 45%,#1e293b)}
+.ic1{background:linear-gradient(145deg,#99f6e4,#2dd4bf 40%,#0f766e)}
+.ic2{background:linear-gradient(145deg,#bae6fd,#38bdf8 40%,#0284c7)}
+.ic3{background:linear-gradient(145deg,#fde68a,#fbbf24 40%,#d97706)}
+.ic4{background:linear-gradient(145deg,#fbcfe8,#f472b6 40%,#db2777)}
+.ic5{background:linear-gradient(145deg,#ddd6fe,#a78bfa 40%,#6d28d9)}
+.ic6{background:linear-gradient(145deg,#e2e8f0,#94a3b8 40%,#475569)}
+
+.form-g{margin-bottom:12px}
+.form-g label{display:block;font-size:.78rem;color:var(--muted);font-weight:600;margin-bottom:5px}
+input,select,textarea{width:100%;background:#f4faf7;border:1.5px solid var(--border);border-radius:12px;padding:11px 12px;font-size:.95rem;font-family:inherit;color:var(--text);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(13,148,136,.12);background:#fff}
+.row{display:flex;gap:8px}.row>*{flex:1}
+.btn{width:100%;border:none;border-radius:12px;padding:13px;font-weight:600;font-size:.95rem;font-family:inherit;cursor:pointer}
+.btn:active{transform:scale(.98)}
+.btn-p{background:linear-gradient(135deg,#2dd4bf,#0d9488);color:#fff;box-shadow:0 6px 16px -6px rgba(13,148,136,.45)}
+.btn-b{background:linear-gradient(135deg,#38bdf8,#0284c7);color:#fff}
+.btn-o{background:linear-gradient(135deg,#fbbf24,#d97706);color:#fff}
+.btn-pk{background:linear-gradient(135deg,#f472b6,#db2777);color:#fff}
+.btn-d{background:linear-gradient(135deg,#f87171,#dc2626);color:#fff}
+.btn-out{background:#fff;border:1.5px solid var(--border);color:var(--text)}
+.btn-sm{width:auto;padding:8px 12px;font-size:.8rem;border-radius:10px}
+.btn-row{display:flex;gap:8px}.btn-row .btn{flex:1}
+
+.item{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid #e8f2ee}
+.item:last-child{border-bottom:none}
+.av{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;background:linear-gradient(145deg,#ecfdf5,#d1fae5);box-shadow:inset 0 1px 2px rgba(255,255,255,.6)}
+.av svg{width:26px;height:26px}
+.item-b{flex:1;min-width:0}
+.item-t{font-weight:600;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item-s{font-size:.72rem;color:var(--muted);margin-top:2px;line-height:1.4}
+.item-r{text-align:right;flex-shrink:0;font-weight:700}
+
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.66rem;font-weight:600}
+.tag.seed{background:#ccfbf1;color:#0f766e}
+.tag.grow{background:#dbeafe;color:#1d4ed8}
+.tag.ready{background:#fef3c7;color:#b45309}
+.tag.sold{background:#e2e8f0;color:#475569}
+.tag.breed{background:#fce7f3;color:#be185d}
+.tag.due{background:#fee2e2;color:#b91c1c}
+
+.tabs{display:flex;gap:6px;margin-bottom:12px;overflow-x:auto}
+.tab{padding:8px 14px;border-radius:999px;border:1.5px solid var(--border);background:#fff;font-size:.8rem;font-weight:600;color:var(--muted);white-space:nowrap;cursor:pointer}
+.tab.on{background:#0d9488;border-color:#0d9488;color:#fff}
+
+.nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-top:1px solid var(--border);display:flex;justify-content:space-around;padding:6px 2px calc(6px + env(safe-area-inset-bottom))}
+.nav-i{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 8px;border-radius:12px;color:var(--muted);font-size:.62rem;font-weight:500;min-width:56px;cursor:pointer}
+.nav-i .ni{font-size:1.25rem}
+.nav-i.on{color:var(--green);background:rgba(13,148,136,.1)}
+
+.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-12px);background:#14241c;color:#fff;padding:11px 18px;border-radius:12px;font-size:.88rem;z-index:200;opacity:0;transition:.28s;pointer-events:none;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.err{border-left:4px solid #ef4444}.toast.ok{border-left:4px solid #14b8a6}
+
+.empty{text-align:center;padding:28px 12px;color:var(--muted)}.empty .e{font-size:2.4rem;opacity:.4;margin-bottom:8px}
+.page-title{font-size:1.12rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.date-line{font-size:.8rem;color:var(--muted);margin-bottom:10px;font-weight:500}
+.tip{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:12px;font-size:.85rem;color:#065f46;line-height:1.45;margin-bottom:10px}
+.tip.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.tip.info{background:#eff6ff;border-color:#bfdbfe;color:#1e40af}
+
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:120;display:none;align-items:flex-end;justify-content:center;backdrop-filter:blur(3px)}
+.modal-bg.show{display:flex}
+.modal{background:#fff;width:100%;max-width:520px;border-radius:22px 22px 0 0;padding:18px 16px 28px;max-height:88vh;overflow-y:auto}
+.modal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.modal-h h3{font-size:1.1rem}
+.xbtn{width:32px;height:32px;border-radius:50%;border:none;background:#f1f5f9;font-size:1.1rem;cursor:pointer}
+
+.feed-card{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #e8f2ee}
+.feed-card:last-child{border-bottom:none}
+.stage-pill{padding:10px 12px;border-radius:14px;background:linear-gradient(145deg,#ecfdf5,#d1fae5);font-weight:700;font-size:.78rem;text-align:center;min-width:72px}
+
+/* Auth */
+#authGate{position:fixed;inset:0;z-index:9999;background:linear-gradient(160deg,#ecfdf5,#f0f9ff 50%,#f0fdf4);display:flex;align-items:center;justify-content:center;padding:20px}
+#authGate.hidden{display:none!important}
+.auth-card{width:100%;max-width:380px;background:#fff;border-radius:24px;padding:28px 22px 24px;box-shadow:0 20px 50px rgba(0,0,0,.1);border:1px solid #e5e7eb}
+.auth-card h2{font-size:1.25rem;margin-bottom:6px;text-align:center}
+.auth-sub{text-align:center;color:#6b7280;font-size:.85rem;margin-bottom:18px;line-height:1.45}
+.auth-icon{width:64px;height:64px;margin:0 auto 14px;border-radius:20px;background:linear-gradient(145deg,#5eead4,#0d9488);display:grid;place-items:center;font-size:1.8rem;box-shadow:0 10px 24px rgba(13,148,136,.35)}
+.auth-panel{display:none}.auth-panel.on{display:block}
+.auth-err{color:#dc2626;font-size:.82rem;margin-top:8px;text-align:center;min-height:1.2em}
+.auth-link{display:block;text-align:center;margin-top:14px;color:#0d9488;font-size:.85rem;font-weight:600;cursor:pointer;background:none;border:none;width:100%;font-family:inherit}
+
+.hero{background:linear-gradient(135deg,#0d9488,#14b8a6 40%,#2dd4bf);border-radius:22px;padding:18px;color:#fff;margin-bottom:14px;position:relative;overflow:hidden;box-shadow:0 12px 32px rgba(13,148,136,.3)}
+.hero::after{content:'';position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero h2{font-size:1.15rem;margin-bottom:4px}
+.hero p{font-size:.8rem;opacity:.9}
+</style>
+</head>
+<body>
+<div id="authGate">
+  <div class="auth-card">
+    <div class="auth-icon" id="authIcon">🔐</div>
+    <h2 id="authTitle">เข้าสู่ระบบ</h2>
+    <p class="auth-sub" id="authSub">ใส่รหัสหรือสแกนใบหน้าเพื่อเปิดใช้แอป</p>
+
+    <!-- LOGIN -->
+    <div class="auth-panel on" id="panelLogin">
+      <!-- Face scan area -->
+      <div id="faceLoginArea" style="display:none;margin-bottom:14px">
+        <video id="faceVideo" playsinline muted style="display:none;width:100%;border-radius:16px;background:#000;max-height:220px;object-fit:cover"></video>
+        <canvas id="faceCanvas" style="display:none"></canvas>
+        <img id="facePreview" alt="" style="display:none;width:100%;border-radius:16px;max-height:220px;object-fit:cover;margin-bottom:10px">
+        <div class="btn-row" style="margin-bottom:8px">
+          <button class="btn btn-b" id="btnStartFace" onclick="startFaceCam()">📷 เปิดกล้องสแกนใบหน้า</button>
+        </div>
+        <button class="btn btn-p" id="btnCaptureFace" style="display:none;margin-bottom:8px" onclick="captureFaceLogin()">✓ ถ่ายและตรวจสอบ</button>
+        <button class="btn btn-out" id="btnStopFace" style="display:none;margin-bottom:8px" onclick="stopFaceCam()">ปิดกล้อง</button>
+      </div>
+
+      <div id="pinLoginArea">
+        <div class="form-g"><label>รหัสเข้าใช้</label><input type="password" id="loginPin" inputmode="numeric" maxlength="12" placeholder="••••" autocomplete="off"></div>
+        <button class="btn btn-p" onclick="doLogin()">เข้าใช้ด้วยรหัส</button>
+      </div>
+
+      <div class="auth-err" id="loginErr"></div>
+      <button class="auth-link" id="togglePinLink" onclick="togglePinFallback()" style="display:none">ใช้รหัสผ่านแทน</button>
+      <button class="auth-link" onclick="showAuthPanel('recover')">ลืมรหัสผ่าน?</button>
+    </div>
+
+    <!-- SETUP -->
+    <div class="auth-panel" id="panelSetup">
+      <div class="form-g"><label>ตั้งรหัสเข้าใช้ (4–12 ตัว)</label><input type="password" id="setupPin" inputmode="numeric" maxlength="12" placeholder="เช่น 1234"></div>
+      <div class="form-g"><label>ยืนยันรหัส</label><input type="password" id="setupPin2" inputmode="numeric" maxlength="12"></div>
+      <div class="form-g"><label>วันเกิด (กู้รหัส)</label><input type="date" id="setupBirth"></div>
+
+      <div class="tip info" style="margin:12px 0 10px">แนะนำ: ลงทะเบียนใบหน้าเพื่อเข้าใช้สะดวกขึ้น (สามารถข้ามได้)</div>
+      <div id="faceSetupArea">
+        <video id="faceSetupVideo" playsinline muted style="display:none;width:100%;border-radius:14px;background:#000;max-height:200px;object-fit:cover;margin-bottom:8px"></video>
+        <canvas id="faceSetupCanvas" style="display:none"></canvas>
+        <img id="faceSetupPreview" style="display:none;width:100%;border-radius:14px;max-height:200px;object-fit:cover;margin-bottom:8px">
+        <div class="btn-row" style="margin-bottom:8px">
+          <button class="btn btn-b" type="button" onclick="startFaceSetupCam()">📷 ถ่ายใบหน้าเพื่อลงทะเบียน</button>
+        </div>
+        <button class="btn btn-o" id="btnCaptureFaceSetup" style="display:none;margin-bottom:8px" type="button" onclick="captureFaceSetup()">✓ บันทึกใบหน้านี้</button>
+        <button class="btn btn-out" id="btnStopFaceSetup" style="display:none;margin-bottom:8px" type="button" onclick="stopFaceSetupCam()">ปิดกล้อง</button>
+        <div id="faceSetupStatus" class="auth-err" style="color:#0d9488;min-height:1.2em"></div>
+      </div>
+
+      <button class="btn btn-p" onclick="doSetup()">บันทึกและเข้าใช้</button>
+      <div class="auth-err" id="setupErr"></div>
+    </div>
+
+    <!-- RECOVER -->
+    <div class="auth-panel" id="panelRecover">
+      <div class="form-g"><label>วันเกิดที่ลงทะเบียน</label><input type="date" id="recoverBirth"></div>
+      <div class="form-g"><label>รหัสใหม่</label><input type="password" id="recoverPin" inputmode="numeric" maxlength="12"></div>
+      <div class="form-g"><label>ยืนยันรหัสใหม่</label><input type="password" id="recoverPin2" inputmode="numeric" maxlength="12"></div>
+      <button class="btn btn-p" onclick="doRecover()">ตั้งรหัสใหม่</button>
+      <div class="auth-err" id="recoverErr"></div>
+      <button class="auth-link" onclick="showAuthPanel('login')">กลับไปเข้าใช้</button>
+    </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="18" ry="12" fill="#fff"/><circle cx="32" cy="28" r="10" fill="#99f6e4"/><circle cx="27" cy="26" r="2" fill="#134e4a"/><circle cx="37" cy="26" r="2" fill="#134e4a"/><path d="M12 30c-6 2-8 10-2 12 4-4 6-8 8-10" fill="#5eead4"/><path d="M52 30c6 2 8 10 2 12-4-4-6-8-8-10" fill="#5eead4"/><path d="M20 44c4 6 20 6 24 0" stroke="#0f766e" stroke-width="2" fill="none"/></svg>
+    </div>
+    <div><h1>ฟาร์มปูนา</h1><span id="subTitle">พันธุ์พระเทพ</span></div>
+  </div>
+  <div class="badge" id="farmBadge">ฟาร์มปูนา</div>
+</div>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <h2 id="heroTitle">🦀 ฟาร์มปูนาพันธุ์พระเทพ</h2>
+    <p id="heroSub">เลี้ยงเพื่อจำหน่ายลูกปู · พ่อพันธุ์ · แม่พันธุ์</p>
+  </div>
+  <div class="date-line" id="todayLine"></div>
+  <div class="stats">
+    <div class="stat g"><div class="stat-l">รุ่นที่เลี้ยง</div><div class="stat-v" id="sBatch">0</div><div class="stat-s">รุ่น</div></div>
+    <div class="stat b"><div class="stat-l">ปูทั้งหมด</div><div class="stat-v" id="sTotal">0</div><div class="stat-s">ตัว</div></div>
+    <div class="stat o"><div class="stat-l">ใกล้ขาย (30 วัน)</div><div class="stat-v" id="sDue">0</div><div class="stat-s">รุ่น</div></div>
+    <div class="stat p"><div class="stat-l">พ่อ-แม่พันธุ์</div><div class="stat-v" id="sBreed">0</div><div class="stat-s">ตัว</div></div>
+  </div>
+  <div class="section">เมนูหลัก</div>
+  <div class="menu">
+    <button class="menu-btn m1" onclick="go('batch')">
+      <div class="ic-3d ic1"><svg viewBox="0 0 64 64" fill="none"><rect x="10" y="18" width="44" height="32" rx="8" fill="#fff"/><path d="M18 34h28M18 26h16M18 42h20" stroke="#0d9488" stroke-width="3" stroke-linecap="round"/><circle cx="46" cy="46" r="10" fill="#14b8a6"/><path d="M46 41v10M41 46h10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+      <div class="t">รุ่น / บ่อ</div><div class="d">แยกรุ่นตามเดือน</div>
+    </button>
+    <button class="menu-btn m2" onclick="go('feed')">
+      <div class="ic-3d ic2"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="40" rx="18" ry="10" fill="#fff"/><path d="M20 28c0-8 24-8 24 0v8H20z" fill="#7dd3fc"/><circle cx="26" cy="30" r="2" fill="#0369a1"/><circle cx="32" cy="28" r="2" fill="#0369a1"/><circle cx="38" cy="30" r="2" fill="#0369a1"/></svg></div>
+      <div class="t">อาหารตามอายุ</div><div class="d">ปริมาณ · สูตร · รอบ</div>
+    </button>
+    <button class="menu-btn m3" onclick="go('sales')">
+      <div class="ic-3d ic3"><svg viewBox="0 0 64 64" fill="none"><rect x="12" y="14" width="40" height="40" rx="8" fill="#fff"/><path d="M22 28h20M22 36h14M22 44h18" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><circle cx="44" cy="18" r="10" fill="#f59e0b"/><path d="M44 13v10M39 18h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div class="t">กำหนดขาย</div><div class="d">แจ้งเตือนรายรุ่น</div>
+    </button>
+    <button class="menu-btn m4" onclick="go('breed')">
+      <div class="ic-3d ic4"><svg viewBox="0 0 64 64" fill="none">
+        <ellipse cx="32" cy="42" rx="18" ry="10" fill="#fce7f3"/>
+        <ellipse cx="32" cy="34" rx="15" ry="12" fill="#f9a8d4"/>
+        <circle cx="32" cy="26" r="11" fill="#fbcfe8"/>
+        <circle cx="27" cy="24" r="2.4" fill="#831843"/><circle cx="37" cy="24" r="2.4" fill="#831843"/>
+        <circle cx="28" cy="23" r="0.8" fill="#fff"/><circle cx="38" cy="23" r="0.8" fill="#fff"/>
+        <ellipse cx="32" cy="30" rx="5" ry="3.5" fill="#fb7185"/>
+        <path d="M10 30c-5 6-3 14 4 12 2-5 5-9 8-11" fill="#f472b6"/>
+        <path d="M54 30c5 6 3 14-4 12-2-5-5-9-8-11" fill="#f472b6"/>
+        <path d="M18 40c-4 2-6 8-2 10" stroke="#be185d" stroke-width="2" fill="none"/>
+        <path d="M46 40c4 2 6 8 2 10" stroke="#be185d" stroke-width="2" fill="none"/>
+      </svg></div>
+      <div class="t">พ่อ-แม่พันธุ์</div><div class="d">แยกบ่อ · เพศ · จำนวน</div>
+    </button>
+    <button class="menu-btn m3" onclick="go('ids')">
+      <div class="ic-3d ic3"><svg viewBox="0 0 64 64" fill="none">
+        <rect x="8" y="18" width="48" height="34" rx="8" fill="#fff"/>
+        <circle cx="32" cy="35" r="12" fill="#fde68a"/>
+        <circle cx="32" cy="35" r="7" fill="#78350f"/>
+        <rect x="22" y="10" width="20" height="10" rx="3" fill="#fff"/>
+        <text x="32" y="54" text-anchor="middle" font-size="8" fill="#b45309" font-weight="700">ID</text>
+      </svg></div>
+      <div class="t">จดจำตัวปู</div><div class="d">กล้อง · M1… · F1…</div>
+    </button>
+    <button class="menu-btn m1" onclick="go('death')" style="background:linear-gradient(160deg,#fca5a5,#ef4444 45%,#991b1b)">
+      <div class="ic-3d" style="background:linear-gradient(145deg,#fecaca,#f87171 40%,#dc2626)"><svg viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="20" fill="#fff"/>
+        <path d="M22 22l20 20M42 22L22 42" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="32" r="26" stroke="#fecaca" stroke-width="3" fill="none"/>
+      </svg></div>
+      <div class="t">การตาย / สาเหตุ</div><div class="d">รายบ่อ · วิเคราะห์</div>
+    </button>
+    <button class="menu-btn m2" onclick="go('water')">
+      <div class="ic-3d ic2"><svg viewBox="0 0 64 64" fill="none">
+        <rect x="12" y="16" width="40" height="36" rx="8" fill="#e0f2fe"/>
+        <path d="M16 40c4-6 8-6 12 0s8 6 12 0 8-6 12 0" stroke="#0284c7" stroke-width="3" fill="none"/>
+        <path d="M16 48c4-6 8-6 12 0s8 6 12 0 8-6 12 0" stroke="#38bdf8" stroke-width="3" fill="none"/>
+        <circle cx="44" cy="22" r="8" fill="#0ea5e9"/>
+        <path d="M44 17v10M39 22h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg></div>
+      <div class="t">ถ่ายเปลี่ยนน้ำ</div><div class="d">รอบ · แจ้งเตือนเสียง</div>
+    </button>
+    <button class="menu-btn m5" onclick="go('report')">
+      <div class="ic-3d ic5"><svg viewBox="0 0 64 64" fill="none"><rect x="10" y="12" width="44" height="40" rx="8" fill="#fff"/><rect x="16" y="36" width="8" height="10" rx="2" fill="#c4b5fd"/><rect x="28" y="28" width="8" height="18" rx="2" fill="#a78bfa"/><rect x="40" y="20" width="8" height="26" rx="2" fill="#7c3aed"/></svg></div>
+      <div class="t">วิเคราะห์</div><div class="d">รุ่น · ตาย · น้ำ · กำไร</div>
+    </button>
+    <button class="menu-btn m6" onclick="go('settings')">
+      <div class="ic-3d ic6"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="14" fill="#fff"/><circle cx="32" cy="32" r="7" fill="#64748b"/><circle cx="32" cy="32" r="3" fill="#e2e8f0"/><path d="M32 10v5M32 49v5M10 32h5M49 32h5M16 16l4 4M44 44l4 4M16 48l4-4M44 20l4-4" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/></svg></div>
+      <div class="t">ตั้งค่า</div><div class="d">แจ้งเตือน · รหัส</div>
+    </button>
+  </div>
+  <div class="section">งานที่ต้องทำ</div>
+  <div class="card" id="todoList"></div>
+</div>
+
+<!-- BATCH -->
+<div id="page-batch" class="page">
+  <div class="page-title">🦀 รุ่น / บ่อเลี้ยง</div>
+  <div class="tip info">แยกรุ่นตามเดือนที่ปล่อย เพื่อติดตามอายุ อาหาร และกำหนดขายได้ชัดเจน</div>
+  <button class="btn btn-p" style="margin-bottom:12px" onclick="openBatchModal()">+ เปิดรุ่นใหม่</button>
+  <div class="tabs">
+    <div class="tab on" onclick="filterBatch('all',this)">ทั้งหมด</div>
+    <div class="tab" onclick="filterBatch('rearing',this)">กำลังเลี้ยง</div>
+    <div class="tab" onclick="filterBatch('ready',this)">พร้อมขาย</div>
+    <div class="tab" onclick="filterBatch('sold',this)">ขายแล้ว</div>
+  </div>
+  <div class="card" id="batchList"></div>
+</div>
+
+<!-- FEED -->
+<div id="page-feed" class="page">
+  <div class="page-title">🍽️ อาหารตามช่วงอายุ</div>
+  <div class="tip">ปริมาณเป็นแนวทางเริ่มต้นต่อ 100 ตัว · ปรับตามความอยากอาหารและคุณภาพน้ำ</div>
+  <div class="card" id="feedGuide"></div>
+  <div class="section">บันทึกให้อาหารวันนี้</div>
+  <div class="card">
+    <div class="form-g"><label>รุ่น</label><select id="feedBatch"></select></div>
+    <div class="row">
+      <div class="form-g"><label>ปริมาณ (กรัม/กก.)</label><input type="number" id="feedAmt" step="0.1" min="0"></div>
+      <div class="form-g"><label>หน่วย</label><select id="feedUnit"><option>กรัม</option><option>กิโลกรัม</option></select></div>
+    </div>
+    <div class="form-g"><label>ชนิดอาหาร</label><input type="text" id="feedType" placeholder="เช่น เม็ดปู / ปลาบด / ผัก"></div>
+    <div class="form-g"><label>หมายเหตุ</label><textarea id="feedNote"></textarea></div>
+    <button class="btn btn-b" onclick="saveFeed()">✓ บันทึกการให้อาหาร</button>
+  </div>
+  <div class="section">ประวัติล่าสุด</div>
+  <div class="card" id="feedHist"></div>
+</div>
+
+<!-- SALES -->
+<div id="page-sales" class="page">
+  <div class="page-title">📅 กำหนดขายรายรุ่น</div>
+  <div class="tip warn" id="salesSummary">ระบบแจ้งเตือนตามอายุเป้าหมายที่ตั้งไว้ในแต่ละรุ่น</div>
+  <div class="card" id="salesList"></div>
+  <div class="section">บันทึกการขาย</div>
+  <div class="card">
+    <div class="form-g"><label>รุ่น</label><select id="sellBatch"></select></div>
+    <div class="row">
+      <div class="form-g"><label>จำนวนขาย (ตัว)</label><input type="number" id="sellQty" min="1"></div>
+      <div class="form-g"><label>ราคาต่อตัว (บาท)</label><input type="number" id="sellPrice" step="0.01" min="0"></div>
+    </div>
+    <div class="form-g"><label>ประเภท</label>
+      <select id="sellType"><option value="juvenile">ลูกปู</option><option value="male">พ่อพันธุ์</option><option value="female">แม่พันธุ์</option><option value="mix">คละ</option></select>
+    </div>
+    <div class="form-g"><label>วันที่ขาย</label><input type="date" id="sellDate"></div>
+    <div class="form-g"><label>ผู้ซื้อ / หมายเหตุ</label><input type="text" id="sellNote"></div>
+    <button class="btn btn-o" onclick="saveSale()">✓ บันทึกการขาย</button>
+  </div>
+  <div class="section">ประวัติขาย</div>
+  <div class="card" id="saleHist"></div>
+</div>
+
+<!-- BREED -->
+<div id="page-breed" class="page">
+  <div class="page-title">💕 พ่อพันธุ์ · แม่พันธุ์ รายบ่อ</div>
+  <div class="tip info">แยกชัด: แต่ละบ่อแสดง รวมทั้งหมด · พ่อ · แม่ · พ่อตาย · แม่ตาย · คงเหลือ</div>
+  <div class="stats">
+    <div class="stat b"><div class="stat-l">พ่อพันธุ์คงเหลือ</div><div class="stat-v" id="brMaleTot">0</div></div>
+    <div class="stat p"><div class="stat-l">แม่พันธุ์คงเหลือ</div><div class="stat-v" id="brFemaleTot">0</div></div>
+    <div class="stat g"><div class="stat-l">รวมคงเหลือ</div><div class="stat-v" id="brAliveTot">0</div></div>
+    <div class="stat r"><div class="stat-l">ตายสะสม</div><div class="stat-v" id="brDeadTot">0</div></div>
+  </div>
+  <button class="btn btn-pk" style="margin-bottom:12px" onclick="openBreedModal()">+ บันทึกพ่อ/แม่พันธุ์เข้าบ่อ</button>
+  <div class="tabs">
+    <div class="tab on" onclick="filterBreed('all',this)">ทั้งหมด</div>
+    <div class="tab" onclick="filterBreed('male',this)">พ่อพันธุ์</div>
+    <div class="tab" onclick="filterBreed('female',this)">แม่พันธุ์</div>
+  </div>
+  <div class="section">สรุปรายบ่อ (แยกเพศ)</div>
+  <div class="card" id="breedByPond"></div>
+  <div class="section">รายการบันทึก</div>
+  <div class="card" id="breedList"></div>
+</div>
+
+
+<!-- ID SCAN (อัตลักษณ์ปู) -->
+<div id="page-ids" class="page">
+  <div class="page-title">📷 จดจำอัตลักษณ์ปู</div>
+  <div class="tip info">
+    ถ่ายปูด้วยกล้อง → ระบบสร้างลายนิ้วมือภาพ แล้วจับคู่กับตัวที่เคยบันทึก (M1… / F1…)<br>
+    <b>การแยกเพศ:</b> กดเลือกพ่อ/แม่พันธุ์หลังถ่าย — การเดาเพศจากรูปอย่างเดียวในแอปออฟไลน์ไม่แม่นเท่าตาคน จึงให้ยืนยันเพศครั้งแรก ครั้งถัดไปจำ ID อัตโนมัติ
+  </div>
+  <div class="stats">
+    <div class="stat b"><div class="stat-l">พ่อพันธุ์ (M)</div><div class="stat-v" id="idMaleN">0</div></div>
+    <div class="stat p"><div class="stat-l">แม่พันธุ์ (F)</div><div class="stat-v" id="idFemaleN">0</div></div>
+  </div>
+  <div class="card">
+    <video id="idVideo" playsinline muted style="display:none;width:100%;border-radius:14px;background:#000;max-height:280px;object-fit:cover"></video>
+    <canvas id="idCanvas" style="display:none"></canvas>
+    <img id="idPreview" alt="" style="display:none;width:100%;border-radius:14px;max-height:280px;object-fit:cover;margin-bottom:10px">
+    <div class="btn-row" style="margin-bottom:10px">
+      <button class="btn btn-b" onclick="startIdCam()">เปิดกล้อง</button>
+      <button class="btn btn-o" onclick="captureIdPhoto()">ถ่ายภาพ</button>
+    </div>
+    <button class="btn btn-out" style="margin-bottom:10px" onclick="document.getElementById('idFile').click()">เลือกจากคลังรูป / กล้อง</button>
+    <input type="file" id="idFile" accept="image/*" capture="environment" style="display:none" onchange="loadIdFile(event)">
+    <div class="form-g"><label>บ่อ (เมื่อเป็นตัวใหม่)</label><input type="text" id="idPond" placeholder="เช่น A1"></div>
+    <div id="idResult" class="tip" style="display:none"></div>
+    <div class="btn-row" id="idSexBtns" style="display:none;margin-top:10px">
+      <button class="btn btn-b" onclick="confirmIdSex('male')">♂️ พ่อพันธุ์ → M</button>
+      <button class="btn btn-pk" onclick="confirmIdSex('female')">♀️ แม่พันธุ์ → F</button>
+    </div>
+    <button class="btn btn-out" style="margin-top:8px;display:none" id="idStopCam" onclick="stopIdCam()">ปิดกล้อง</button>
+  </div>
+  <div class="section">ทะเบียนที่จดจำแล้ว</div>
+  <div class="tabs">
+    <div class="tab on" onclick="filterIds('all',this)">ทั้งหมด</div>
+    <div class="tab" onclick="filterIds('male',this)">M พ่อพันธุ์</div>
+    <div class="tab" onclick="filterIds('female',this)">F แม่พันธุ์</div>
+  </div>
+  <div class="card" id="idList"></div>
+</div>
+
+<!-- DEATH -->
+<div id="page-death" class="page">
+  <div class="page-title">☠️ การตายรายบ่อ</div>
+  <div class="tip warn">บันทึกทุกครั้งที่มีการตาย เพื่อวิเคราะห์สาเหตุและลดการสูญเสียรอบถัดไป</div>
+  <div class="card">
+    <div class="form-g"><label>บ่อ / รุ่น</label><select id="deathBatch"></select></div>
+    <div class="row">
+      <div class="form-g"><label>เพศที่ตาย *</label>
+        <select id="deathSex">
+          <option value="male">พ่อพันธุ์ (ตัวผู้)</option>
+          <option value="female">แม่พันธุ์ (ตัวเมีย)</option>
+          <option value="unknown">ไม่แยกเพศ / ลูกปู</option>
+        </select>
+      </div>
+      <div class="form-g"><label>จำนวนที่ตาย (ตัว)</label><input type="number" id="deathQty" min="1" value="1"></div>
+    </div>
+    <div class="form-g"><label>วันที่</label><input type="date" id="deathDate"></div>
+    <div class="form-g"><label>อาการ / สาเหตุที่สังเกต</label>
+      <select id="deathCause">
+        <option value="water">น้ำเสีย / ออกซิเจนต่ำ</option>
+        <option value="disease">โรค / เชื้อรา / จุดดำ</option>
+        <option value="molt">ลอกคราบไม่สำเร็จ</option>
+        <option value="cannibal">กัดกัน / หนาแน่นเกิน</option>
+        <option value="feed">อาหารไม่เหมาะสม / ขาดอาหาร</option>
+        <option value="temp">อุณหภูมิผันผวน</option>
+        <option value="transport">เครียดจากการขนย้าย</option>
+        <option value="unknown">ไม่ทราบสาเหตุ</option>
+      </select>
+    </div>
+    <div class="form-g"><label>หมายเหตุเพิ่มเติม</label><textarea id="deathNote" placeholder="เช่น กลิ่นน้ำเหม็น, ปูตัวอ่อนเพิ่งปล่อย"></textarea></div>
+    <button class="btn btn-d" onclick="saveDeath()">✓ บันทึกการตาย</button>
+  </div>
+  <div class="section">สรุปตายรายบ่อ</div>
+  <div class="card" id="deathByPond"></div>
+  <div class="section">วิเคราะห์สาเหตุที่เป็นไปได้</div>
+  <div class="card" id="deathAnalysis"></div>
+  <div class="section">ประวัติ</div>
+  <div class="card" id="deathHist"></div>
+</div>
+
+<!-- WATER -->
+<div id="page-water" class="page">
+  <div class="page-title">💧 ถ่ายเปลี่ยนน้ำ</div>
+  <div class="tip info">ตั้งรอบถ่ายน้ำตามบ่อ · เมื่อครบกำหนดระบบจะแจ้งเตือนด้วยข้อความ + เสียงคล้ายนาฬิกาปลุก</div>
+  <div class="card" id="waterDueList"></div>
+  <div class="section">บันทึกการถ่ายน้ำ</div>
+  <div class="card">
+    <div class="form-g"><label>บ่อ / รุ่น</label><select id="waterBatch"></select></div>
+    <div class="form-g"><label>วันที่ถ่าย</label><input type="date" id="waterDate"></div>
+    <div class="form-g"><label>เปอร์เซ็นต์ที่ถ่าย (%)</label><input type="number" id="waterPct" value="30" min="10" max="100"></div>
+    <div class="form-g"><label>หมายเหตุ</label><input type="text" id="waterNote" placeholder="เช่น ถ่าย 1/3 · เติมน้ำใหม่"></div>
+    <button class="btn btn-b" onclick="saveWater()">✓ บันทึกถ่ายน้ำ (รีเซ็ตรอบถัดไป)</button>
+  </div>
+  <div class="section">ตั้งค่ารอบถ่ายน้ำ</div>
+  <div class="card">
+    <div class="form-g"><label>ทุกกี่วันต้องถ่ายน้ำ (ค่าเริ่มต้นทุกบ่อ)</label>
+      <select id="waterInterval">
+        <option value="2">ทุก 2 วัน</option>
+        <option value="3" selected>ทุก 3 วัน</option>
+        <option value="5">ทุก 5 วัน</option>
+        <option value="7">ทุก 7 วัน</option>
+        <option value="10">ทุก 10 วัน</option>
+      </select>
+    </div>
+    <div class="form-g"><label>แจ้งเตือนล่วงหน้า (ชั่วโมง)</label>
+      <select id="waterAlertHrs">
+        <option value="0">เมื่อครบกำหนดทันที</option>
+        <option value="6">ล่วงหน้า 6 ชม.</option>
+        <option value="12" selected>ล่วงหน้า 12 ชม.</option>
+        <option value="24">ล่วงหน้า 1 วัน</option>
+      </select>
+    </div>
+    <div class="form-g">
+      <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" id="waterSound" checked style="width:auto"> เปิดเสียงปลุกเมื่อถึงเวลา</label>
+    </div>
+    <div class="form-g">
+      <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" id="waterNotif" checked style="width:auto"> แสดงการแจ้งเตือนข้อความ (Notification)</label>
+    </div>
+    <button class="btn btn-p" onclick="saveWaterSettings()">บันทึกการตั้งค่าถ่ายน้ำ</button>
+    <button class="btn btn-out" style="margin-top:8px" onclick="testAlarm()">🔔 ทดสอบเสียง + ข้อความแจ้งเตือน</button>
+  </div>
+  <div class="section">ประวัติถ่ายน้ำ</div>
+  <div class="card" id="waterHist"></div>
+</div>
+
+<!-- REPORT -->
+<div id="page-report" class="page">
+  <div class="page-title">📊 วิเคราะห์ฟาร์ม</div>
+  <div class="date-line" id="reportRange"></div>
+  <div class="stats">
+    <div class="stat g"><div class="stat-l">รุ่น active</div><div class="stat-v" id="rBatch">0</div></div>
+    <div class="stat o"><div class="stat-l">รายได้ขาย (บันทึก)</div><div class="stat-v" id="rRev">0</div><div class="stat-s">บาท</div></div>
+    <div class="stat b"><div class="stat-l">ปูคงเหลือ</div><div class="stat-v" id="rStock">0</div></div>
+    <div class="stat p"><div class="stat-l">พ่อ-แม่พันธุ์</div><div class="stat-v" id="rBreed">0</div></div>
+  </div>
+  <div class="section">วิเคราะห์รายรุ่น</div>
+  <div class="card" id="batchAnalysis"></div>
+  <div class="section">คำแนะนำ</div>
+  <div class="card" id="tipsBox"></div>
+</div>
+
+<!-- SETTINGS -->
+<div id="page-settings" class="page">
+  <div class="page-title">⚙️ ตั้งค่า</div>
+  <div class="card">
+    <div class="form-g"><label>ชื่อฟาร์ม</label><input type="text" id="setFarm"></div>
+    <div class="form-g"><label>ผู้ใช้งาน</label><input type="text" id="setUser"></div>
+    <div class="form-g"><label>อายุเป้าหมายขายลูกปู (วัน)</label><input type="number" id="setSellDays" value="90" min="30"></div>
+    <div class="form-g"><label>แจ้งเตือนล่วงหน้าก่อนขาย (วัน)</label>
+      <select id="setAlertDays"><option value="7">7 วัน</option><option value="14" selected>14 วัน</option><option value="30">30 วัน</option></select>
+    </div>
+    <button class="btn btn-p" onclick="saveSettings()">บันทึก</button>
+  </div>
+  <div class="section">การแจ้งเตือนระบบ</div>
+  <div class="card">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:10px;line-height:1.45">ขอสิทธิ์แจ้งเตือนจากเบราว์เซอร์เพื่อให้ข้อความขึ้นเหมือนแอปทั่วไป (แม้สลับหน้าจอ)</p>
+    <button class="btn btn-out" onclick="requestNotifPermission()">เปิดสิทธิ์การแจ้งเตือน</button>
+  </div>
+  <div class="section">บัญชีผู้ใช้ & ใบหน้า</div>
+  <div class="card">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:12px">ออกจากระบบแล้วต้องใส่รหัสหรือสแกนใบหน้าใหม่ทุกครั้ง</p>
+    <div id="faceStatusBox" class="tip info" style="margin-bottom:12px">กำลังตรวจสอบ...</div>
+    <div id="faceManageArea">
+      <video id="faceManageVideo" playsinline muted style="display:none;width:100%;border-radius:14px;background:#000;max-height:200px;object-fit:cover;margin-bottom:8px"></video>
+      <canvas id="faceManageCanvas" style="display:none"></canvas>
+      <img id="faceManagePreview" style="display:none;width:100%;border-radius:14px;max-height:200px;object-fit:cover;margin-bottom:8px">
+      <div class="btn-row" style="margin-bottom:8px">
+        <button class="btn btn-b" type="button" onclick="startFaceManageCam()">📷 ลงทะเบียน / เปลี่ยนใบหน้า</button>
+      </div>
+      <button class="btn btn-o" id="btnCaptureFaceManage" style="display:none;margin-bottom:8px" type="button" onclick="captureFaceManage()">✓ บันทึกใบหน้านี้</button>
+      <button class="btn btn-out" id="btnStopFaceManage" style="display:none;margin-bottom:8px" type="button" onclick="stopFaceManageCam()">ปิดกล้อง</button>
+      <button class="btn btn-d" id="btnRemoveFace" style="display:none;margin-bottom:8px" type="button" onclick="removeFace()">🗑️ ลบใบหน้าที่ลงทะเบียน</button>
+    </div>
+    <button class="btn btn-d" style="margin-top:8px" onclick="doLogout()">🔒 ออกจากระบบ (Logout)</button>
+  </div>
+  <div class="section">ข้อมูล</div>
+  <div class="card">
+    <button class="btn btn-out" style="margin-bottom:8px" onclick="exportData()">📤 ส่งออก JSON</button>
+    <button class="btn btn-out" style="margin-bottom:8px" onclick="document.getElementById('imp').click()">📥 นำเข้า JSON</button>
+    <input type="file" id="imp" accept=".json" style="display:none" onchange="importData(event)">
+    <button class="btn btn-d" onclick="clearData()">🗑️ ล้างข้อมูลทั้งหมด</button>
+  </div>
+</div>
+
+<!-- Modal Batch -->
+<div class="modal-bg" id="modalBatch">
+  <div class="modal">
+    <div class="modal-h"><h3>เปิดรุ่นใหม่</h3><button class="xbtn" onclick="closeModals()">×</button></div>
+    <div class="form-g"><label>ชื่อรุ่น *</label><input id="bName" placeholder="เช่น รุ่น มี.ค. 69 / บ่อ A1"></div>
+    <div class="row">
+      <div class="form-g"><label>เดือนที่ปล่อย</label><input type="month" id="bMonth"></div>
+      <div class="form-g"><label>วันที่ปล่อย</label><input type="date" id="bDate"></div>
+    </div>
+    <div class="row">
+      <div class="form-g"><label>จำนวน (ตัว)</label><input type="number" id="bQty" min="0" value="500"></div>
+      <div class="form-g"><label>ขนาดเริ่ม (ซม./ตัว)</label><input type="number" id="bSize" step="0.1" value="1.5"></div>
+    </div>
+    <div class="form-g"><label>ประเภทเป้าหมาย</label>
+      <select id="bGoal"><option value="juvenile">ลูกปูจำหน่าย</option><option value="breeder">เลี้ยงเป็นพ่อ-แม่พันธุ์</option><option value="both">ทั้งสองอย่าง</option></select>
+    </div>
+    <div class="form-g"><label>อายุเป้าขาย (วัน)</label><input type="number" id="bSellDays" value="90" min="30"></div>
+    <div class="form-g"><label>บ่อ / ตำแหน่ง</label><input id="bPond" placeholder="บ่อ 1"></div>
+    <div class="form-g"><label>หมายเหตุ</label><textarea id="bNote"></textarea></div>
+    <button class="btn btn-p" onclick="addBatch()">บันทึกรุ่น</button>
+  </div>
+</div>
+
+<!-- Modal Breed -->
+<div class="modal-bg" id="modalBreed">
+  <div class="modal">
+    <div class="modal-h"><h3>เพิ่มพ่อ/แม่พันธุ์</h3><button class="xbtn" onclick="closeModals()">×</button></div>
+    <div class="form-g"><label>บ่อ *</label><input id="brPond" placeholder="เช่น A1 / บ่อ 1"></div>
+    <div class="form-g"><label>เพศ *</label><select id="brSex"><option value="male">พ่อพันธุ์ (ตัวผู้)</option><option value="female">แม่พันธุ์ (ตัวเมีย)</option></select></div>
+    <div class="row">
+      <div class="form-g"><label>จำนวน (ตัว) *</label><input type="number" id="brQty" min="1" value="1"></div>
+      <div class="form-g"><label>รหัสกลุ่ม / ตัว</label><input id="brCode" placeholder="เช่น M-A1 หรือเว้นว่าง"></div>
+    </div>
+    <div class="row">
+      <div class="form-g"><label>น้ำหนักเฉลี่ย (ก.)</label><input type="number" id="brW" step="0.1"></div>
+      <div class="form-g"><label>กระดองเฉลี่ย (ซม.)</label><input type="number" id="brCar" step="0.1"></div>
+    </div>
+    <div class="form-g"><label>มาจากรุ่น</label><input id="brFrom" placeholder="รุ่นต้นทาง"></div>
+    <div class="form-g"><label>วันที่คัด/ใส่บ่อ</label><input type="date" id="brDate"></div>
+    <div class="form-g"><label>หมายเหตุ</label><textarea id="brNote"></textarea></div>
+    <button class="btn btn-pk" onclick="addBreed()">บันทึกเข้าบ่อ</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<nav class="nav">
+  <div class="nav-i on" data-p="home" onclick="go('home')"><span class="ni">🏠</span>หน้าหลัก</div>
+  <div class="nav-i" data-p="batch" onclick="go('batch')"><span class="ni">🦀</span>รุ่น</div>
+  <div class="nav-i" data-p="feed" onclick="go('feed')"><span class="ni">🍽️</span>อาหาร</div>
+  <div class="nav-i" data-p="sales" onclick="go('sales')"><span class="ni">📅</span>ขาย</div>
+  <div class="nav-i" data-p="report" onclick="go('report')"><span class="ni">📊</span>วิเคราะห์</div>
+</nav>
+
+<script>
+const KEY='crabfarm_pro_v1', AUTH_KEY='crabfarm_auth_v1';
+let S={settings:{farmName:'ฟาร์มปูนาพระเทพ',user:'เกษตรกร',sellDays:90,alertDays:14,waterDays:3,waterAlertHrs:12,waterSound:true,waterNotif:true},batches:[],feeds:[],sales:[],breeders:[],deaths:[],waterLogs:[],crabIds:[],idSeq:{male:0,female:0}};
+let auth={setup:false,pinHash:'',birth:''}, unlocked=false, batchFilter='all', breedFilter='all';
+let alarmTimer=null, lastAlarmKey='';
+
+const DEATH_CAUSES={
+  water:{label:'น้ำเสีย / ออกซิเจนต่ำ',tips:['ถ่ายน้ำทันที 30–50%','เพิ่มออกซิเจน / อย่าให้อาหารเกิน','ตรวจกลิ่นสีน้ำทุกเช้า']},
+  disease:{label:'โรค / เชื้อรา / จุดดำ',tips:['แยกตัวที่ผิดปกติ','ลดความหนาแน่น','ปรึกษาเจ้าหน้าที่ประมงหากระบาด']},
+  molt:{label:'ลอกคราบไม่สำเร็จ',tips:['มีที่หลบซ่อนเพียงพอ','แคลเซียม/แร่ธาตุในน้ำ','อย่ารบกวนช่วงลอกคราบ']},
+  cannibal:{label:'กัดกัน / หนาแน่นเกิน',tips:['ลดความหนาแน่น','แยกขนาด','เพิ่มที่หลบซ่อน']},
+  feed:{label:'อาหารไม่เหมาะสม',tips:['ปรับสูตรตามอายุ','อย่าให้อาหารเหลือจนน้ำเสีย','แบ่งมื้อ']},
+  temp:{label:'อุณหภูมิผันผวน',tips:['มีที่ร่ม','หลีกเลี่ยงน้ำร้อนจัด/เย็นจัด','ถ่ายน้ำช้าๆ']},
+  transport:{label:'เครียดขนย้าย',tips:['พักฟื้นหลังปล่อย','น้ำคุณภาพดี','อย่าปล่อยหนาแน่นทันที']},
+  unknown:{label:'ไม่ทราบสาเหตุ',tips:['สังเกตอาการรอบด้าน','บันทึกน้ำ อาหาร อากาศ','เทียบกับบ่ออื่น']}
+};
+
+const FEED_STAGES=[
+  {id:'s1',name:'วัยอ่อน',age:'0–15 วัน',size:'< 1.5 ซม.',feed:'ผง/เม็ดเล็กโปรตีนสูง · ไรแดง',per100:'8–15 กรัม/วัน',times:'3–4 ครั้ง',note:'ให้น้อยแต่บ่อย คุณภาพน้ำสำคัญ'},
+  {id:'s2',name:'ลูกปูเล็ก',age:'16–45 วัน',size:'1.5–3 ซม.',feed:'เม็ดปูโปรตีน 30–35% · ปลาบด',per100:'20–40 กรัม/วัน',times:'2–3 ครั้ง',note:'เริ่มแยกบ่อหนาแน่นลดลง'},
+  {id:'s3',name:'กลาง',age:'46–90 วัน',size:'3–5 ซม.',feed:'เม็ดปู · เศษปลา · ผัก',per100:'50–80 กรัม/วัน',times:'2 ครั้ง',note:'ช่วงเตรียมขายลูกปู'},
+  {id:'s4',name:'รุ่นใหญ่ / พ่อแม่',age:'90+ วัน',size:'> 5 ซม.',feed:'เม็ดโตเต็มวัย · อาหารเสริม',per100:'80–150 กรัม/วัน',times:'1–2 ครั้ง',note:'คัดพ่อแม่พันธุ์คุณภาพ'}
+];
+
+const $=id=>document.getElementById(id);
+const today=()=>new Date().toISOString().slice(0,10);
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const fmtD=d=>d?new Date(d).toLocaleDateString('th-TH',{day:'numeric',month:'short',year:'numeric'}):'—';
+function daysBetween(a,b){const x=new Date(a),y=new Date(b);x.setHours(0,0,0,0);y.setHours(0,0,0,0);return Math.round((y-x)/86400000)}
+function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)}
+function toast(m,t='ok'){const el=$('toast');el.textContent=m;el.className='toast show '+(t==='err'?'err':'ok');setTimeout(()=>el.classList.remove('show'),2800)}
+function save(){localStorage.setItem(KEY,JSON.stringify(S))}
+function load(){try{const r=localStorage.getItem(KEY);if(r)S=JSON.parse(r)}catch(e){}
+  S.settings=Object.assign({farmName:'ฟาร์มปูนาพระเทพ',user:'เกษตรกร',sellDays:90,alertDays:14,waterDays:3,waterAlertHrs:12,waterSound:true,waterNotif:true},S.settings||{});
+  ['batches','feeds','sales','breeders','deaths','waterLogs','crabIds'].forEach(k=>{if(!S[k])S[k]=[]}); if(!S.idSeq)S.idSeq={male:0,female:0}}
+
+function stageOf(ageDays){
+  if(ageDays<=15)return FEED_STAGES[0];
+  if(ageDays<=45)return FEED_STAGES[1];
+  if(ageDays<=90)return FEED_STAGES[2];
+  return FEED_STAGES[3];
+}
+function batchStatus(b){
+  if(b.status==='sold')return 'sold';
+  const age=daysBetween(b.startDate,today());
+  const target=b.sellDays||S.settings.sellDays||90;
+  if(age>=target)return 'ready';
+  return 'rearing';
+}
+function statusTag(st){
+  const m={rearing:['กำลังเลี้ยง','grow'],ready:['พร้อมขาย','ready'],sold:['ขายแล้ว','sold'],seed:['ปล่อยใหม่','seed']};
+  const x=m[st]||['—','grow'];return `<span class="tag ${x[1]}">${x[0]}</span>`;
+}
+
+function go(name){
+  if(!unlocked)return;
+  document.querySelectorAll('.page').forEach(p=>{ p.classList.remove('active'); p.style.display='none'; });
+  const page=$('page-'+name);
+  if(page){ page.classList.add('active'); page.style.display='block'; }
+  document.querySelectorAll('.nav-i').forEach(n=>n.classList.toggle('on',n.dataset.p===name));
+  const titles={home:'พันธุ์พระเทพ',batch:'รุ่น / บ่อ',feed:'อาหารตามอายุ',sales:'กำหนดขาย',breed:'พ่อ-แม่พันธุ์',ids:'จดจำตัวปู',death:'การตาย',water:'ถ่ายน้ำ',report:'วิเคราะห์',settings:'ตั้งค่า'};
+  $('subTitle').textContent=titles[name]||'';
+  if(name==='home')renderHome();
+  if(name==='batch')renderBatches();
+  if(name==='feed'){renderFeedGuide();fillBatchSelects();renderFeedHist()}
+  if(name==='sales'){renderSales();fillBatchSelects();renderSaleHist();$('sellDate').value=today()}
+  if(name==='breed')renderBreed();
+  if(name==='ids'){stopIdCam();renderIdList()}
+  if(name==='death'){fillBatchSelects();$('deathDate').value=today();renderDeath()}
+  if(name==='water'){fillBatchSelects();$('waterDate').value=today();loadWaterForm();renderWater()}
+  if(name==='report')renderReport();
+  if(name==='settings')loadSettingsForm();
+}
+function closeModals(){document.querySelectorAll('.modal-bg').forEach(m=>m.classList.remove('show'))}
+
+/* HOME */
+function renderHome(){
+  $('todayLine').textContent=new Date().toLocaleDateString('th-TH',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  $('farmBadge').textContent=S.settings.farmName||'ฟาร์มปูนา';
+  $('heroTitle').textContent='🦀 '+(S.settings.farmName||'ฟาร์มปูนาพันธุ์พระเทพ');
+  const active=S.batches.filter(b=>b.status!=='sold');
+  $('sBatch').textContent=active.length;
+  $('sTotal').textContent=active.reduce((a,b)=>a+(b.qty||0),0);
+  $('sBreed').textContent=S.breeders.length;
+  const alertD=Number(S.settings.alertDays)||14;
+  let due=0;
+  active.forEach(b=>{
+    const age=daysBetween(b.startDate,today());
+    const left=(b.sellDays||S.settings.sellDays||90)-age;
+    if(left<=alertD)due++;
+  });
+  $('sDue').textContent=due;
+
+  const todos=[];
+  active.forEach(b=>{
+    const age=daysBetween(b.startDate,today());
+    const target=b.sellDays||S.settings.sellDays||90;
+    const left=target-age;
+    const st=stageOf(age);
+    if(left<=0)todos.push({ic:'💰',t:`ถึงกำหนดขาย: ${b.name}`,s:`อายุ ${age} วัน · คงเหลือ ${b.qty} ตัว · เป้า ${target} วัน`});
+    else if(left<=alertD)todos.push({ic:'⏰',t:`ใกล้ขาย: ${b.name}`,s:`อีก ${left} วัน · ช่วง ${st.name} · ${b.qty} ตัว`});
+  });
+  // ถ่ายน้ำ
+  active.forEach(b=>{
+    const info=waterDueInfo(b);
+    if(info.overdue) todos.unshift({ic:'💧',t:`ถึงกำหนดถ่ายน้ำ: ${b.name}`,s:`บ่อ ${b.pond||'—'} · รอบทุก ${info.interval} วัน · ถ่ายล่าสุด ${fmtD(info.last)}`});
+    else if(info.left<=1) todos.push({ic:'💧',t:`ใกล้ถ่ายน้ำ: ${b.name}`,s:`อีก ${info.left} วัน`});
+  });
+  // อาหารแนะนำวันนี้
+  active.slice(0,2).forEach(b=>{
+    const age=daysBetween(b.startDate,today());
+    const st=stageOf(age);
+    todos.push({ic:'🍽️',t:`อาหาร ${b.name}`,s:`${st.name} · แนะนำ ${st.per100} ต่อ 100 ตัว · ${st.times}`});
+  });
+  $('todoList').innerHTML=todos.length?todos.slice(0,10).map(t=>`
+    <div class="item"><div class="av">🦀</div><div class="item-b"><div class="item-t">${t.ic} ${t.t}</div><div class="item-s">${t.s}</div></div></div>
+  `).join(''):'<div class="empty"><div class="e">✅</div>ไม่มีงานด่วน</div>';
+}
+
+/* BATCH */
+function filterBatch(f,el){batchFilter=f;document.querySelectorAll('#page-batch .tab').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderBatches()}
+function openBatchModal(){
+  const now=new Date();
+  $('bMonth').value=now.toISOString().slice(0,7);
+  $('bDate').value=today();
+  $('bSellDays').value=S.settings.sellDays||90;
+  $('modalBatch').classList.add('show');
+}
+function addBatch(){
+  const name=$('bName').value.trim();
+  if(!name)return toast('กรอกชื่อรุ่น','err');
+  const qty=parseInt($('bQty').value)||0;
+  const sellDays=parseInt($('bSellDays').value)||90;
+  const start=$('bDate').value||today();
+  S.batches.push({
+    id:uid(),name,month:$('bMonth').value,startDate:start,qty,startQty:qty,
+    size:parseFloat($('bSize').value)||0,goal:$('bGoal').value,sellDays,
+    pond:$('bPond').value.trim(),note:$('bNote').value.trim(),status:'rearing'
+  });
+  save();closeModals();toast('เปิดรุ่นแล้ว');renderBatches();renderHome();
+  $('bName').value='';$('bNote').value='';
+}
+function renderBatches(){
+  let list=S.batches.slice().reverse();
+  list=list.filter(b=>{
+    const st=batchStatus(b);
+    if(batchFilter==='all')return true;
+    if(batchFilter==='sold')return b.status==='sold'||st==='sold';
+    if(batchFilter==='ready')return st==='ready';
+    if(batchFilter==='rearing')return st==='rearing';
+    return true;
+  });
+  $('batchList').innerHTML=list.length?list.map(b=>{
+    const age=daysBetween(b.startDate,today());
+    const st=batchStatus(b);
+    const stage=stageOf(age);
+    const left=(b.sellDays||90)-age;
+    return `<div class="item" style="align-items:flex-start">
+      <div class="av"><svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="16" ry="10" fill="#5eead4"/><circle cx="32" cy="28" r="9" fill="#99f6e4"/><circle cx="28" cy="26" r="1.8" fill="#134e4a"/><circle cx="36" cy="26" r="1.8" fill="#134e4a"/></svg></div>
+      <div class="item-b">
+        <div class="item-t">${b.name} ${statusTag(st)}</div>
+        <div class="item-s" style="white-space:normal">
+          เดือน ${b.month||'—'} · ปล่อย ${fmtD(b.startDate)} · บ่อ ${b.pond||'—'}<br>
+          อายุ <b>${age}</b> วัน · ช่วง <b>${stage.name}</b> · เป้าขาย ${b.sellDays} วัน
+          ${left>0?` · เหลือ ${left} วัน`:' · <span class="tag due">ถึงกำหนด</span>'}
+        </div>
+      </div>
+      <div class="item-r">${b.qty}<div style="font-size:.68rem;font-weight:500;color:var(--muted)">ตัว</div></div>
+    </div>`;
+  }).join(''):'<div class="empty"><div class="e">🦀</div>ยังไม่มีรุ่น</div>';
+}
+
+/* FEED */
+function renderFeedGuide(){
+  $('feedGuide').innerHTML=FEED_STAGES.map(s=>`
+    <div class="feed-card">
+      <div class="stage-pill">${s.name}</div>
+      <div>
+        <div class="item-t">${s.age} · ขนาด ${s.size}</div>
+        <div class="item-s" style="white-space:normal">${s.feed}<br>ปริมาณ: <b>${s.per100}</b> · ${s.times}<br>${s.note}</div>
+      </div>
+    </div>`).join('');
+}
+function fillBatchSelects(){
+  const opts=S.batches.filter(b=>b.status!=='sold').map(b=>{
+    const age=daysBetween(b.startDate,today());
+    return `<option value="${b.id}">${b.name} · ${b.pond||'—'} (${b.qty} ตัว · อายุ ${age} ว.)</option>`;
+  }).join('');
+  const html=opts||'<option value="">— ไม่มีรุ่น —</option>';
+  ['feedBatch','sellBatch','deathBatch','waterBatch'].forEach(id=>{if($(id))$(id).innerHTML=html});
+}
+function saveFeed(){
+  const bid=$('feedBatch').value;
+  if(!bid)return toast('เลือกุ่น','err');
+  const amt=parseFloat($('feedAmt').value);
+  if(!amt||amt<=0)return toast('ระบุปริมาณ','err');
+  const b=S.batches.find(x=>x.id===bid);
+  S.feeds.push({id:uid(),batchId:bid,batchName:b?b.name:'',date:today(),amount:amt,unit:$('feedUnit').value,type:$('feedType').value.trim(),note:$('feedNote').value.trim()});
+  save();toast('บันทึกอาหารแล้ว');
+  $('feedAmt').value='';$('feedNote').value='';renderFeedHist();
+}
+function renderFeedHist(){
+  const list=S.feeds.slice().reverse().slice(0,20);
+  $('feedHist').innerHTML=list.length?list.map(f=>`
+    <div class="item"><div class="av">🍽️</div>
+      <div class="item-b"><div class="item-t">${f.batchName}</div>
+      <div class="item-s">${fmtD(f.date)} · ${f.amount} ${f.unit} · ${f.type||''}</div></div></div>
+  `).join(''):'<div class="empty">ยังไม่มีบันทึก</div>';
+}
+
+/* SALES */
+function renderSales(){
+  const alertD=Number(S.settings.alertDays)||14;
+  const items=S.batches.filter(b=>b.status!=='sold').map(b=>{
+    const age=daysBetween(b.startDate,today());
+    const target=b.sellDays||90;
+    const left=target-age;
+    return {...b,age,target,left};
+  }).sort((a,b)=>a.left-b.left);
+  $('salesSummary').textContent=`แจ้งเตือนล่วงหน้า ${alertD} วัน · มี ${items.filter(i=>i.left<=alertD).length} รุ่นที่ใกล้/ถึงกำหนด`;
+  $('salesList').innerHTML=items.length?items.map(b=>{
+    const color=b.left<=0?'#dc2626':b.left<=alertD?'#ea580c':'#0d9488';
+    const label=b.left<=0?'ถึงกำหนดแล้ว':`อีก ${b.left} วัน`;
+    return `<div class="item" style="align-items:flex-start">
+      <div class="av">📅</div>
+      <div class="item-b">
+        <div class="item-t">${b.name} ${b.left<=0?'<span class="tag due">ขายได้</span>':''}</div>
+        <div class="item-s" style="white-space:normal">ปล่อย ${fmtD(b.startDate)} · อายุ ${b.age}/${b.target} วัน · ${b.qty} ตัว · เป้า ${b.goal==='breeder'?'พ่อแม่พันธุ์':b.goal==='both'?'ลูก+พันธุ์':'ลูกปู'}</div>
+      </div>
+      <div class="item-r" style="color:${color};font-size:.8rem">${label}</div>
+    </div>`;
+  }).join(''):'<div class="empty">ยังไม่มีรุ่นที่กำลังเลี้ยง</div>';
+}
+function saveSale(){
+  const bid=$('sellBatch').value;
+  if(!bid)return toast('เลือกุ่น','err');
+  const qty=parseInt($('sellQty').value)||0;
+  if(qty<1)return toast('ระบุจำนวน','err');
+  const b=S.batches.find(x=>x.id===bid);
+  if(!b||b.qty<qty)return toast('จำนวนในรุ่นไม่พอ','err');
+  const price=parseFloat($('sellPrice').value)||0;
+  b.qty-=qty;
+  if(b.qty<=0){b.qty=0;b.status='sold'}
+  S.sales.push({id:uid(),batchId:bid,batchName:b.name,qty,price,total:qty*price,type:$('sellType').value,date:$('sellDate').value||today(),note:$('sellNote').value.trim()});
+  save();toast('บันทึกการขายแล้ว');
+  $('sellQty').value='';$('sellNote').value='';
+  renderSales();renderSaleHist();renderHome();fillBatchSelects();
+}
+function renderSaleHist(){
+  const list=S.sales.slice().reverse().slice(0,20);
+  $('saleHist').innerHTML=list.length?list.map(s=>`
+    <div class="item"><div class="av">💰</div>
+      <div class="item-b"><div class="item-t">${s.batchName} · ${s.qty} ตัว</div>
+      <div class="item-s">${fmtD(s.date)} · ${s.type} · รวม ${(s.total||0).toLocaleString()} บาท</div></div>
+      <div class="item-r" style="color:#0d9488">${(s.total||0).toLocaleString()}</div></div>
+  `).join(''):'<div class="empty">ยังไม่มีประวัติขาย</div>';
+}
+
+/* BREED */
+function filterBreed(f,el){breedFilter=f;document.querySelectorAll('#page-breed .tab').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderBreed()}
+function openBreedModal(){$('brDate').value=today();if($('brQty'))$('brQty').value='1';$('modalBreed').classList.add('show')}
+function addBreed(){
+  const pond=$('brPond').value.trim();
+  if(!pond)return toast('ระบุชื่อบ่อ เช่น A1','err');
+  const qty=parseInt($('brQty')?$('brQty').value:1)||1;
+  if(qty<1)return toast('จำนวนต้องอย่างน้อย 1','err');
+  const sex=$('brSex').value;
+  let code=$('brCode').value.trim();
+  if(!code) code=(sex==='male'?'M':'F')+'-'+pond+'-'+Date.now().toString(36).slice(-4);
+  S.breeders.push({
+    id:uid(),code,sex,pond,qty,
+    weight:parseFloat($('brW').value)||null,
+    carapace:parseFloat($('brCar').value)||null,
+    from:$('brFrom').value.trim(),
+    date:$('brDate').value||today(),
+    note:$('brNote').value.trim()
+  });
+  save();closeModals();toast('บันทึก '+qty+' ตัว เข้าบ่อ '+pond);
+  renderBreed();renderHome();
+  $('brCode').value='';$('brNote').value='';$('brPond').value='';if($('brQty'))$('brQty').value='1';
+}
+/** สรุปพ่อ-แม่ รายบ่อ: รวม · พ่อ · แม่ · ตายพ่อ · ตายแม่ · คงเหลือ */
+function pondBreedStats(){
+  const map={};
+  S.breeders.forEach(b=>{
+    const p=b.pond||'ไม่ระบุบ่อ';
+    if(!map[p])map[p]={male:0,female:0,deadM:0,deadF:0,deadU:0};
+    const q=b.qty!=null?b.qty:1;
+    if(b.sex==='male')map[p].male+=q; else map[p].female+=q;
+  });
+  S.deaths.forEach(d=>{
+    const p=d.pond||'ไม่ระบุบ่อ';
+    if(!map[p])map[p]={male:0,female:0,deadM:0,deadF:0,deadU:0};
+    const q=d.qty||0;
+    if(d.sex==='male')map[p].deadM+=q;
+    else if(d.sex==='female')map[p].deadF+=q;
+    else map[p].deadU+=q;
+  });
+  return map;
+}
+function renderBreed(){
+  const map=pondBreedStats();
+  let maleL=0,femaleL=0,deadAll=0;
+  Object.values(map).forEach(x=>{
+    maleL+=Math.max(0,x.male-x.deadM);
+    femaleL+=Math.max(0,x.female-x.deadF);
+    deadAll+=x.deadM+x.deadF+x.deadU;
+  });
+  if($('brMaleTot'))$('brMaleTot').textContent=maleL;
+  if($('brFemaleTot'))$('brFemaleTot').textContent=femaleL;
+  if($('brAliveTot'))$('brAliveTot').textContent=maleL+femaleL;
+  if($('brDeadTot'))$('brDeadTot').textContent=deadAll;
+
+  const ponds=Object.keys(map).sort();
+  $('breedByPond').innerHTML=ponds.length?ponds.map(p=>{
+    const x=map[p];
+    const start=x.male+x.female;
+    const dead=x.deadM+x.deadF+x.deadU;
+    const liveM=Math.max(0,x.male-x.deadM);
+    const liveF=Math.max(0,x.female-x.deadF);
+    const remain=Math.max(0,start-dead);
+    const ratio=liveF? (liveM/liveF).toFixed(2):'—';
+    return `<div style="padding:12px 0;border-bottom:1px solid #e8f2ee">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div class="item-t">🏞️ บ่อ ${p}</div>
+        <span class="tag ${remain>0?'grow':'sold'}">เหลือ ${remain} ตัว</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:.8rem;line-height:1.45">
+        <div>รวมทั้งหมด (ใส่บ่อ): <b>${start}</b></div>
+        <div>คงเหลือทั้งหมด: <b style="color:#0d9488">${remain}</b></div>
+        <div>พ่อพันธุ์: <b>${x.male}</b> → เหลือ <b>${liveM}</b></div>
+        <div>แม่พันธุ์: <b>${x.female}</b> → เหลือ <b>${liveF}</b></div>
+        <div style="color:#dc2626">พ่อพันธุ์ตาย: <b>${x.deadM}</b></div>
+        <div style="color:#dc2626">แม่พันธุ์ตาย: <b>${x.deadF}</b></div>
+        ${x.deadU?`<div style="grid-column:1/-1;color:#ea580c">ตายไม่แยกเพศ: <b>${x.deadU}</b></div>`:''}
+        <div style="grid-column:1/-1;color:var(--muted)">อัตรา ♂/♀ คงเหลือ ≈ ${ratio}</div>
+      </div>
+    </div>`;
+  }).join(''):'<div class="empty">ยังไม่มีข้อมูลรายบ่อ — กดบันทึกพ่อ/แม่พันธุ์เข้าบ่อ</div>';
+
+  let list=S.breeders.slice().reverse();
+  if(breedFilter!=='all')list=list.filter(b=>b.sex===breedFilter);
+  $('breedList').innerHTML=list.length?list.map(b=>`
+    <div class="item">
+      <div class="av">${b.sex==='male'?'♂️':'♀️'}</div>
+      <div class="item-b">
+        <div class="item-t">${b.code||'—'} <span class="tag breed">${b.sex==='male'?'พ่อพันธุ์':'แม่พันธุ์'}</span> × ${b.qty!=null?b.qty:1}</div>
+        <div class="item-s">บ่อ ${b.pond||'—'} · ${b.weight?b.weight+' ก. · ':''}${b.carapace?'กระดอง '+b.carapace+' ซม. · ':''}จาก ${b.from||'—'} · ${fmtD(b.date)}</div>
+      </div>
+    </div>`).join(''):'<div class="empty">ยังไม่มีรายการ</div>';
+}
+
+/* DEATH */
+function saveDeath(){
+  const bid=$('deathBatch').value;
+  if(!bid)return toast('เลือกบ่อ/รุ่น','err');
+  const qty=parseInt($('deathQty').value)||0;
+  if(qty<1)return toast('ระบุจำนวน','err');
+  const b=S.batches.find(x=>x.id===bid);
+  if(!b)return toast('ไม่พบรุ่น','err');
+  const sex=$('deathSex')?$('deathSex').value:'unknown';
+  const cause=$('deathCause').value;
+  const pond=b.pond||'';
+  S.deaths.push({id:uid(),batchId:bid,batchName:b.name,pond,sex,qty,cause,date:$('deathDate').value||today(),note:$('deathNote').value.trim()});
+  b.qty=Math.max(0,(b.qty||0)-qty);
+  save();toast('บันทึกการตายแล้ว ('+(sex==='male'?'พ่อพันธุ์':sex==='female'?'แม่พันธุ์':'ไม่แยกเพศ')+')');
+  $('deathQty').value='1';$('deathNote').value='';
+  renderDeath();renderHome();fillBatchSelects();
+}
+function renderDeath(){
+  const map={};
+  S.deaths.forEach(d=>{
+    const k=d.pond||d.batchName||'—';
+    if(!map[k])map[k]={qty:0,deadM:0,deadF:0,deadU:0,causes:{}};
+    map[k].qty+=d.qty||0;
+    if(d.sex==='male')map[k].deadM+=d.qty||0;
+    else if(d.sex==='female')map[k].deadF+=d.qty||0;
+    else map[k].deadU+=d.qty||0;
+    map[k].causes[d.cause]=(map[k].causes[d.cause]||0)+(d.qty||0);
+  });
+  $('deathByPond').innerHTML=Object.keys(map).length?Object.keys(map).map(k=>{
+    const m=map[k];
+    const top=Object.entries(m.causes).sort((a,b)=>b[1]-a[1])[0];
+    const topLabel=top? (DEATH_CAUSES[top[0]]||{}).label||top[0] : '—';
+    return `<div class="item" style="align-items:flex-start"><div class="av">☠️</div>
+      <div class="item-b"><div class="item-t">บ่อ ${k}</div>
+      <div class="item-s" style="white-space:normal">ตายรวม <b>${m.qty}</b> · พ่อพันธุ์ตาย <b>${m.deadM}</b> · แม่พันธุ์ตาย <b>${m.deadF}</b>${m.deadU?' · ไม่แยก '+m.deadU:''}<br>สาเหตุหลัก: ${topLabel}</div></div>
+      <div class="item-r" style="color:#dc2626">${m.qty}</div></div>`;
+  }).join(''):'<div class="empty">ยังไม่มีบันทึกการตาย</div>';
+
+  const causeTot={};
+  S.deaths.forEach(d=>{causeTot[d.cause]=(causeTot[d.cause]||0)+(d.qty||0)});
+  const sorted=Object.entries(causeTot).sort((a,b)=>b[1]-a[1]);
+  if(!sorted.length){
+    $('deathAnalysis').innerHTML='<div class="empty">บันทึกการตายเพื่อดูการวิเคราะห์</div>';
+  } else {
+    $('deathAnalysis').innerHTML=sorted.map(([c,n])=>{
+      const info=DEATH_CAUSES[c]||{label:c,tips:[]};
+      return `<div class="item" style="align-items:flex-start"><div class="av">🔎</div>
+        <div class="item-b"><div class="item-t">${info.label} · ${n} ตัว</div>
+        <div class="item-s" style="white-space:normal">แนวทาง: ${info.tips.join(' · ')}</div></div></div>`;
+    }).join('');
+  }
+
+  const hist=S.deaths.slice().reverse().slice(0,25);
+  const sexLabel=s=>s==='male'?'พ่อพันธุ์':s==='female'?'แม่พันธุ์':'ไม่แยกเพศ';
+  $('deathHist').innerHTML=hist.length?hist.map(d=>`
+    <div class="item"><div class="av">📋</div>
+      <div class="item-b"><div class="item-t">${d.pond||d.batchName} · ${sexLabel(d.sex)} ${d.qty} ตัว</div>
+      <div class="item-s">${fmtD(d.date)} · ${(DEATH_CAUSES[d.cause]||{}).label||d.cause} ${d.note?'· '+d.note:''}</div></div></div>
+  `).join(''):'<div class="empty">ยังไม่มีประวัติ</div>';
+}
+
+/* WATER + ALARM */
+function lastWaterDate(batchId){
+  const logs=S.waterLogs.filter(w=>w.batchId===batchId).sort((a,b)=>b.date.localeCompare(a.date));
+  return logs[0]?logs[0].date:null;
+}
+function waterDueInfo(b){
+  const interval=Number(S.settings.waterDays)||3;
+  const last=lastWaterDate(b.id)||b.startDate;
+  const next=addDays(last,interval);
+  const left=daysBetween(today(),next);
+  return {last,next,left,interval,overdue:left<=0};
+}
+function playAlarmSound(){
+  try{
+    const ctx=new (window.AudioContext||window.webkitAudioContext)();
+    const beep=(t,f)=>{
+      const o=ctx.createOscillator(), g=ctx.createGain();
+      o.type='square'; o.frequency.value=f;
+      g.gain.value=0.08;
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t); o.stop(t+0.25);
+    };
+    const now=ctx.currentTime;
+    beep(now,880); beep(now+0.3,880); beep(now+0.6,1175); beep(now+1.0,880); beep(now+1.3,880);
+  }catch(e){console.warn('audio',e)}
+}
+function showSystemNotif(title,body){
+  if(!S.settings.waterNotif) return;
+  if(!('Notification' in window)) return;
+  if(Notification.permission==='granted'){
+    try{ new Notification(title,{body,tag:'crab-water',renotify:true}); }catch(e){}
+  }
+}
+function requestNotifPermission(){
+  if(!('Notification' in window)) return toast('เครื่องนี้ไม่รองรับ Notification','err');
+  Notification.requestPermission().then(p=>{
+    if(p==='granted') toast('เปิดการแจ้งเตือนแล้ว');
+    else toast('ยังไม่อนุญาตการแจ้งเตือน','err');
+  });
+}
+function testAlarm(){
+  playAlarmSound();
+  showSystemNotif('ฟาร์มปูนา — ทดสอบ','ถึงเวลาถ่ายเปลี่ยนน้ำ (ทดสอบ)');
+  toast('ทดสอบเสียง + แจ้งเตือนแล้ว');
+}
+function checkWaterAlarms(){
+  if(!unlocked) return;
+  const hrs=Number(S.settings.waterAlertHrs)||0;
+  S.batches.filter(b=>b.status!=='sold').forEach(b=>{
+    const info=waterDueInfo(b);
+    // due or within alert window (approx by days; hrs used as same-day early flag)
+    const should=(info.overdue) || (info.left===0) || (hrs>=24 && info.left<=1) || (hrs>0 && info.left<=0);
+    const key=b.id+'-'+info.next;
+    if(should && lastAlarmKey!==key){
+      lastAlarmKey=key;
+      const msg=`บ่อ ${b.pond||b.name}: ถึงกำหนดถ่ายน้ำ (รอบทุก ${info.interval} วัน)`;
+      toast('🔔 '+msg);
+      if(S.settings.waterSound!==false) playAlarmSound();
+      showSystemNotif('ถึงเวลาถ่ายเปลี่ยนน้ำ', msg);
+    }
+  });
+}
+function startAlarmLoop(){
+  if(alarmTimer) clearInterval(alarmTimer);
+  checkWaterAlarms();
+  alarmTimer=setInterval(checkWaterAlarms, 60*1000); // every minute
+}
+function loadWaterForm(){
+  if($('waterInterval'))$('waterInterval').value=String(S.settings.waterDays||3);
+  if($('waterAlertHrs'))$('waterAlertHrs').value=String(S.settings.waterAlertHrs??12);
+  if($('waterSound'))$('waterSound').checked=S.settings.waterSound!==false;
+  if($('waterNotif'))$('waterNotif').checked=S.settings.waterNotif!==false;
+}
+function saveWaterSettings(){
+  S.settings.waterDays=parseInt($('waterInterval').value)||3;
+  S.settings.waterAlertHrs=parseInt($('waterAlertHrs').value)||0;
+  S.settings.waterSound=$('waterSound').checked;
+  S.settings.waterNotif=$('waterNotif').checked;
+  save(); toast('บันทึกการตั้งค่าถ่ายน้ำแล้ว'); renderWater();
+}
+function saveWater(){
+  const bid=$('waterBatch').value;
+  if(!bid)return toast('เลือกบ่อ/รุ่น','err');
+  const b=S.batches.find(x=>x.id===bid);
+  if(!b)return toast('ไม่พบรุ่น','err');
+  S.waterLogs.push({id:uid(),batchId:bid,batchName:b.name,pond:b.pond||'',date:$('waterDate').value||today(),pct:parseInt($('waterPct').value)||30,note:$('waterNote').value.trim()});
+  save(); toast('บันทึกถ่ายน้ำแล้ว · รอบถัดไปนับใหม่');
+  $('waterNote').value=''; renderWater(); renderHome();
+}
+function renderWater(){
+  const list=S.batches.filter(b=>b.status!=='sold');
+  $('waterDueList').innerHTML=list.length?list.map(b=>{
+    const info=waterDueInfo(b);
+    const color=info.overdue?'#dc2626':info.left<=1?'#ea580c':'#0d9488';
+    const label=info.overdue?'⚠️ เกินกำหนด':`อีก ${info.left} วัน`;
+    return `<div class="item"><div class="av">💧</div>
+      <div class="item-b"><div class="item-t">${b.name} · ${b.pond||''}</div>
+      <div class="item-s">ถ่ายล่าสุด ${fmtD(info.last)} · รอบทุก ${info.interval} วัน · ถัดไป ${fmtD(info.next)}</div></div>
+      <div class="item-r" style="color:${color};font-size:.8rem">${label}</div></div>`;
+  }).join(''):'<div class="empty">ยังไม่มีรุ่น</div>';
+
+  const hist=S.waterLogs.slice().reverse().slice(0,20);
+  $('waterHist').innerHTML=hist.length?hist.map(w=>`
+    <div class="item"><div class="av">🌊</div>
+      <div class="item-b"><div class="item-t">${w.batchName}</div>
+      <div class="item-s">${fmtD(w.date)} · ถ่าย ${w.pct||'—'}% ${w.note?'· '+w.note:''}</div></div></div>
+  `).join(''):'<div class="empty">ยังไม่มีประวัติ</div>';
+}
+
+/* REPORT */
+function renderReport(){
+  $('reportRange').textContent='ข้อมูล ณ '+fmtD(today())+' · '+(S.settings.farmName||'');
+  const active=S.batches.filter(b=>b.status!=='sold');
+  $('rBatch').textContent=active.length;
+  $('rStock').textContent=active.reduce((a,b)=>a+(b.qty||0),0);
+  $('rBreed').textContent=S.breeders.length;
+  const rev=S.sales.reduce((a,s)=>a+(s.total||0),0);
+  $('rRev').textContent=rev.toLocaleString();
+
+  $('batchAnalysis').innerHTML=S.batches.length?S.batches.slice().reverse().map(b=>{
+    const age=daysBetween(b.startDate,today());
+    const st=stageOf(age);
+    const sold=S.sales.filter(s=>s.batchId===b.id);
+    const soldQty=sold.reduce((a,s)=>a+(s.qty||0),0);
+    const soldRev=sold.reduce((a,s)=>a+(s.total||0),0);
+    const mort=Math.max(0,(b.startQty||b.qty)-b.qty-soldQty);
+    const surv=b.startQty?(((b.startQty-mort)/b.startQty)*100):null;
+    return `<div class="item" style="align-items:flex-start">
+      <div class="av">📊</div>
+      <div class="item-b">
+        <div class="item-t">${b.name} ${statusTag(batchStatus(b))}</div>
+        <div class="item-s" style="white-space:normal;line-height:1.45">
+          อายุ ${age} วัน (${st.name}) · เริ่ม ${b.startQty||b.qty} → เหลือ ${b.qty} · ขายแล้ว ${soldQty}<br>
+          รอดโดยประมาณ: <b>${surv!=null?surv.toFixed(1)+'%':'—'}</b> · รายได้รุ่นนี้: <b>${soldRev.toLocaleString()} บาท</b><br>
+          อาหารที่บันทึก: ${S.feeds.filter(f=>f.batchId===b.id).length} ครั้ง
+        </div>
+      </div>
+    </div>`;
+  }).join(''):'<div class="empty">ยังไม่มีข้อมูล</div>';
+
+  const tips=[];
+  active.forEach(b=>{
+    const age=daysBetween(b.startDate,today());
+    if(age>=(b.sellDays||90))tips.push({ic:'💰',t:`ขายรุ่น ${b.name}`,s:`ครบอายุเป้าแล้ว เหลือ ${b.qty} ตัว`});
+    const feeds=S.feeds.filter(f=>f.batchId===b.id&&f.date===today());
+    if(!feeds.length)tips.push({ic:'🍽️',t:`ยังไม่บันทึกอาหารวันนี้: ${b.name}`,s:stageOf(age).per100+' ต่อ 100 ตัว'});
+  });
+  if(S.breeders.filter(b=>b.sex==='female').length===0)tips.push({ic:'♀️',t:'ยังไม่มีแม่พันธุ์ในระบบ',s:'คัดจากรุ่นที่ดีเพื่อขยายพันธุ์ต่อ'});
+  const deadTot=S.deaths.reduce((a,d)=>a+(d.qty||0),0);
+  if(deadTot>0){
+    const causeTot={};S.deaths.forEach(d=>{causeTot[d.cause]=(causeTot[d.cause]||0)+(d.qty||0)});
+    const top=Object.entries(causeTot).sort((a,b)=>b[1]-a[1])[0];
+    if(top) tips.push({ic:'☠️',t:`ตายสะสม ${deadTot} ตัว · หลัก: ${(DEATH_CAUSES[top[0]]||{}).label||top[0]}`,s:(DEATH_CAUSES[top[0]]||{tips:[]}).tips.slice(0,2).join(' · ')});
+  }
+  S.batches.filter(b=>b.status!=='sold').forEach(b=>{
+    const info=waterDueInfo(b);
+    if(info.overdue) tips.push({ic:'💧',t:`ถ่ายน้ำเกินกำหนด: ${b.name}`,s:`ควรถ่ายน้ำทันที`});
+  });
+  if(!tips.length)tips.push({ic:'✅',t:'ฟาร์มเดินตามแผน',s:'บันทึกรุ่น อาหาร การตาย ถ่ายน้ำ และการขายสม่ำเสมอ'});
+  $('tipsBox').innerHTML=tips.map(t=>`<div class="item"><div class="av">${t.ic}</div><div class="item-b"><div class="item-t">${t.t}</div><div class="item-s">${t.s}</div></div></div>`).join('');
+}
+
+/* SETTINGS */
+function loadSettingsForm(){
+  $('setFarm').value=S.settings.farmName||'';
+  $('setUser').value=S.settings.user||'';
+  $('setSellDays').value=S.settings.sellDays||90;
+  $('setAlertDays').value=String(S.settings.alertDays||14);
+}
+function saveSettings(){
+  S.settings.farmName=$('setFarm').value.trim()||'ฟาร์มปูนาพระเทพ';
+  S.settings.user=$('setUser').value.trim()||'เกษตรกร';
+  S.settings.sellDays=parseInt($('setSellDays').value)||90;
+  S.settings.alertDays=parseInt($('setAlertDays').value)||14;
+  save();$('farmBadge').textContent=S.settings.farmName;toast('บันทึกแล้ว');
+}
+function exportData(){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,2)],{type:'application/json'}));
+  a.download=`crabfarm-${today()}.json`;a.click();
+}
+function importData(e){
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=ev=>{try{const d=JSON.parse(ev.target.result);if(!d.batches)return toast('ไฟล์ไม่ถูกต้อง','err');if(confirm('แทนที่ข้อมูล?')){S=d;save();renderHome();toast('นำเข้าแล้ว')}}catch(err){toast('อ่านไฟล์ไม่สำเร็จ','err')}};
+  r.readAsText(f);e.target.value='';
+}
+function clearData(){if(confirm('ล้างข้อมูลทั้งหมด?')){S={settings:S.settings,batches:[],feeds:[],sales:[],breeders:[],deaths:[],waterLogs:[],crabIds:[],idSeq:{male:0,female:0}};save();renderHome();toast('ล้างแล้ว')}}
+
+function seed(){
+  if(S.batches.length)return;
+  S.batches.push(
+    {id:uid(),name:'รุ่น ก.พ. 69 - บ่อ 1',month:'2026-02',startDate:addDays(today(),-70),qty:420,startQty:500,size:1.2,goal:'juvenile',sellDays:90,pond:'A1',status:'rearing',note:''},
+    {id:uid(),name:'รุ่น มี.ค. 69 - บ่อ 2',month:'2026-03',startDate:addDays(today(),-25),qty:800,startQty:800,size:1.0,goal:'both',sellDays:100,pond:'B1',status:'rearing',note:''}
+  );
+  S.breeders.push(
+    {id:uid(),code:'M-A1',sex:'male',pond:'A1',qty:20,weight:85,carapace:6.5,from:'รุ่นเก่า',date:addDays(today(),-40),note:''},
+    {id:uid(),code:'F-A1',sex:'female',pond:'A1',qty:40,weight:70,carapace:6.0,from:'รุ่นเก่า',date:addDays(today(),-40),note:''},
+    {id:uid(),code:'M-B1',sex:'male',pond:'B1',qty:15,weight:90,carapace:6.8,from:'รุ่นเก่า',date:addDays(today(),-35),note:''},
+    {id:uid(),code:'F-B1',sex:'female',pond:'B1',qty:30,weight:72,carapace:6.1,from:'รุ่นเก่า',date:addDays(today(),-35),note:''}
+  );
+  S.deaths.push(
+    {id:uid(),batchId:S.batches[0].id,batchName:S.batches[0].name,pond:'A1',sex:'male',qty:2,cause:'water',date:addDays(today(),-5),note:'น้ำเขียวเข้ม'},
+    {id:uid(),batchId:S.batches[0].id,batchName:S.batches[0].name,pond:'A1',sex:'female',qty:5,cause:'cannibal',date:addDays(today(),-3),note:''},
+    {id:uid(),batchId:S.batches[1].id,batchName:S.batches[1].name,pond:'B1',sex:'female',qty:3,cause:'molt',date:addDays(today(),-2),note:''}
+  );
+  S.waterLogs.push({id:uid(),batchId:S.batches[0].id,batchName:S.batches[0].name,pond:'บ่อ 1',date:addDays(today(),-4),pct:30,note:'ถ่าย 1/3'});
+  save();
+}
+
+/* AUTH */
+function hashPin(pin){let h=5381;const s='cb_'+String(pin);for(let i=0;i<s.length;i++)h=((h<<5)+h)^s.charCodeAt(i);return 'h'+(h>>>0).toString(16)}
+
+/* ===== CRAB ID (ลายนิ้วมือภาพ + M/F รันนิ่ง) ===== */
+let idStream=null, idPending=null, idFilter='all';
+
+function nextIdCode(sex){
+  if(!S.idSeq)S.idSeq={male:0,female:0};
+  if(sex==='male'){ S.idSeq.male=(S.idSeq.male||0)+1; return 'M'+S.idSeq.male; }
+  S.idSeq.female=(S.idSeq.female||0)+1; return 'F'+S.idSeq.female;
+}
+
+/** ลายนิ้วมือภาพแบบง่าย: กริดสีเฉลี่ย 8x8 + ความสว่าง → ใช้จับคู่รูปเดิม */
+function imageFingerprint(imgOrCanvas){
+  const size=8;
+  const c=document.createElement('canvas');
+  c.width=size; c.height=size;
+  const ctx=c.getContext('2d');
+  ctx.drawImage(imgOrCanvas,0,0,size,size);
+  const data=ctx.getImageData(0,0,size,size).data;
+  const vec=[];
+  for(let i=0;i<data.length;i+=4){
+    const r=data[i],g=data[i+1],b=data[i+2];
+    vec.push(Math.round((r+g+b)/3));
+    vec.push(Math.round(r/32));
+    vec.push(Math.round(g/32));
+    vec.push(Math.round(b/32));
+  }
+  return vec;
+}
+function fpDistance(a,b){
+  if(!a||!b||a.length!==b.length) return 1e9;
+  let s=0;
+  for(let i=0;i<a.length;i++){ const d=a[i]-b[i]; s+=d*d; }
+  return Math.sqrt(s/a.length);
+}
+function matchCrabId(fp){
+  if(!S.crabIds||!S.crabIds.length) return null;
+  let best=null, bestD=1e9;
+  S.crabIds.forEach(c=>{
+    const d=fpDistance(fp,c.fp);
+    if(d<bestD){ bestD=d; best=c; }
+  });
+  // threshold: ยิ่งต่ำยิ่งเข้มงวด — ค่าประมาณสำหรับรูปคล้าย
+  if(best && bestD < 18) return {crab:best, dist:bestD};
+  return null;
+}
+
+async function startIdCam(){
+  try{
+    stopIdCam();
+    idStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});
+    const v=$('idVideo');
+    v.srcObject=idStream; v.style.display='block'; v.play();
+    $('idPreview').style.display='none';
+    $('idStopCam').style.display='block';
+    toast('เปิดกล้องแล้ว — จัดปูให้อยู่กลางภาพแล้วกดถ่าย');
+  }catch(e){
+    toast('เปิดกล้องไม่ได้ — ใช้เลือกรูปจากคลังแทน','err');
+  }
+}
+function stopIdCam(){
+  if(idStream){ idStream.getTracks().forEach(t=>t.stop()); idStream=null; }
+  const v=$('idVideo'); if(v){ v.style.display='none'; v.srcObject=null; }
+  if($('idStopCam'))$('idStopCam').style.display='none';
+}
+function captureIdPhoto(){
+  const v=$('idVideo');
+  if(!v || v.style.display==='none' || !v.videoWidth){
+    toast('เปิดกล้องก่อน หรือเลือกรูปจากคลัง','err'); return;
+  }
+  const c=$('idCanvas');
+  c.width=v.videoWidth; c.height=v.videoHeight;
+  c.getContext('2d').drawImage(v,0,0);
+  processIdCanvas(c);
+}
+function loadIdFile(ev){
+  const f=ev.target.files&&ev.target.files[0]; if(!f)return;
+  const img=new Image();
+  img.onload=()=>{
+    const c=$('idCanvas');
+    const max=640; let w=img.width,h=img.height;
+    if(w>max){ h=Math.round(h*max/w); w=max; }
+    c.width=w; c.height=h;
+    c.getContext('2d').drawImage(img,0,0,w,h);
+    processIdCanvas(c);
+  };
+  img.src=URL.createObjectURL(f);
+  ev.target.value='';
+}
+function processIdCanvas(c){
+  stopIdCam();
+  const thumb=c.toDataURL('image/jpeg',0.7);
+  const prev=$('idPreview');
+  prev.src=thumb; prev.style.display='block';
+  const fp=imageFingerprint(c);
+  const hit=matchCrabId(fp);
+  const box=$('idResult'); const sexBtns=$('idSexBtns');
+  box.style.display='block';
+  if(hit){
+    const cr=hit.crab;
+    cr.lastSeen=today();
+    // อัปเดต thumb ล่าสุดเล็กน้อย
+    cr.thumb=thumb;
+    save();
+    idPending=null;
+    sexBtns.style.display='none';
+    box.className='tip';
+    box.innerHTML=`✅ <b>จดจำได้: ${cr.code}</b> · ${cr.sex==='male'?'พ่อพันธุ์':'แม่พันธุ์'}<br>บ่อ ${cr.pond||'—'} · บันทึกครั้งแรก ${fmtD(cr.created)} · เห็นล่าสุดวันนี้<br>ความคล้าย (คะแนนระยะ) ${hit.dist.toFixed(1)}`;
+    toast('พบ '+cr.code);
+    renderIdList();
+  } else {
+    idPending={fp,thumb};
+    sexBtns.style.display='flex';
+    box.className='tip warn';
+    box.innerHTML=`🆕 <b>ยังไม่พบในทะเบียน</b> — เลือกเพศเพื่อออกเลขอัตโนมัติ<br>พ่อพันธุ์จะได้รหัส M… · แม่พันธุ์จะได้รหัส F…`;
+    toast('ตัวใหม่ — เลือกเพศเพื่อบันทึก');
+  }
+}
+function confirmIdSex(sex){
+  if(!idPending) return toast('ถ่ายภาพก่อน','err');
+  const code=nextIdCode(sex);
+  const pond=($('idPond')&&$('idPond').value.trim())||'';
+  const rec={
+    id:uid(), code, sex, pond,
+    fp:idPending.fp, thumb:idPending.thumb,
+    created:today(), lastSeen:today(), note:''
+  };
+  if(!S.crabIds)S.crabIds=[];
+  S.crabIds.push(rec);
+  // เชื่อมกับ breeders นับ 1 ตัว
+  S.breeders.push({id:uid(),code,sex,pond:pond||'ไม่ระบุบ่อ',qty:1,weight:null,carapace:null,from:'สแกนID',date:today(),note:'จากกล้องจดจำ'});
+  save();
+  idPending=null;
+  $('idSexBtns').style.display='none';
+  const box=$('idResult');
+  box.className='tip';
+  box.innerHTML=`✅ บันทึกใหม่ <b>${code}</b> เป็น${sex==='male'?'พ่อพันธุ์':'แม่พันธุ์'}${pond?' · บ่อ '+pond:''}<br>ครั้งหน้าถ่ายตัวนี้ ระบบจะพยายามเรียก ${code} อัตโนมัติ`;
+  toast('บันทึก '+code);
+  renderIdList(); renderBreed(); renderHome();
+}
+function filterIds(f,el){
+  idFilter=f;
+  document.querySelectorAll('#page-ids .tab').forEach(t=>t.classList.remove('on'));
+  if(el)el.classList.add('on');
+  renderIdList();
+}
+function renderIdList(){
+  const list=S.crabIds||[];
+  const m=list.filter(c=>c.sex==='male').length;
+  const f=list.filter(c=>c.sex==='female').length;
+  if($('idMaleN'))$('idMaleN').textContent=m;
+  if($('idFemaleN'))$('idFemaleN').textContent=f;
+  let show=list.slice().reverse();
+  if(idFilter==='male')show=show.filter(c=>c.sex==='male');
+  if(idFilter==='female')show=show.filter(c=>c.sex==='female');
+  const el=$('idList');
+  if(!el)return;
+  el.innerHTML=show.length?show.map(c=>`
+    <div class="item">
+      ${c.thumb?`<img src="${c.thumb}" style="width:46px;height:46px;border-radius:12px;object-fit:cover;flex-shrink:0">`:`<div class="av">${c.sex==='male'?'♂️':'♀️'}</div>`}
+      <div class="item-b">
+        <div class="item-t">${c.code} <span class="tag breed">${c.sex==='male'?'พ่อพันธุ์':'แม่พันธุ์'}</span></div>
+        <div class="item-s">บ่อ ${c.pond||'—'} · เริ่ม ${fmtD(c.created)} · เห็นล่าสุด ${fmtD(c.lastSeen)}</div>
+      </div>
+    </div>`).join(''):'<div class="empty">ยังไม่มีทะเบียน — ถ่ายปูเพื่อเริ่ม M1 / F1</div>';
+}
+
+
+function loadAuth(){
+  try{const r=localStorage.getItem(AUTH_KEY);if(r)auth=JSON.parse(r)}catch(e){}
+  if(!auth)auth={setup:false,pinHash:'',birth:'',faceFp:null,faceThumb:null};
+  if(auth.faceFp===undefined)auth.faceFp=null;
+  if(auth.faceThumb===undefined)auth.faceThumb=null;
+}
+function saveAuth(){localStorage.setItem(AUTH_KEY,JSON.stringify(auth))}
+
+/* ===== FACE LOGIN (ใช้ลายนิ้วมือภาพแบบเดียวกับจดจำปู) ===== */
+let faceStream=null, faceSetupStream=null, faceManageStream=null;
+let pendingFaceFp=null, pendingFaceThumb=null;
+const FACE_MATCH_THRESHOLD=16; // ยิ่งต่ำยิ่งเข้มงวด
+
+function hasFaceEnrolled(){ return !!(auth && auth.faceFp && auth.faceFp.length); }
+
+function stopStream(stream){
+  if(stream){ try{ stream.getTracks().forEach(t=>t.stop()); }catch(e){} }
+}
+
+function stopFaceCam(){
+  stopStream(faceStream); faceStream=null;
+  const v=$('faceVideo'); if(v){ v.style.display='none'; v.srcObject=null; }
+  if($('btnCaptureFace'))$('btnCaptureFace').style.display='none';
+  if($('btnStopFace'))$('btnStopFace').style.display='none';
+  if($('btnStartFace'))$('btnStartFace').style.display='block';
+}
+function stopFaceSetupCam(){
+  stopStream(faceSetupStream); faceSetupStream=null;
+  const v=$('faceSetupVideo'); if(v){ v.style.display='none'; v.srcObject=null; }
+  if($('btnCaptureFaceSetup'))$('btnCaptureFaceSetup').style.display='none';
+  if($('btnStopFaceSetup'))$('btnStopFaceSetup').style.display='none';
+}
+function stopFaceManageCam(){
+  stopStream(faceManageStream); faceManageStream=null;
+  const v=$('faceManageVideo'); if(v){ v.style.display='none'; v.srcObject=null; }
+  if($('btnCaptureFaceManage'))$('btnCaptureFaceManage').style.display='none';
+  if($('btnStopFaceManage'))$('btnStopFaceManage').style.display='none';
+}
+
+async function startFaceCam(){
+  try{
+    stopFaceCam();
+    faceStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user', width:{ideal:640}, height:{ideal:480}}, audio:false});
+    const v=$('faceVideo');
+    v.srcObject=faceStream; v.style.display='block'; await v.play();
+    $('facePreview').style.display='none';
+    $('btnCaptureFace').style.display='block';
+    $('btnStopFace').style.display='block';
+    $('btnStartFace').style.display='none';
+    toast('จัดใบหน้าให้อยู่กลางภาพ แล้วกดถ่าย');
+  }catch(e){
+    toast('เปิดกล้องไม่ได้ — ใช้รหัสผ่านแทน','err');
+    showPinFallback();
+  }
+}
+
+function captureFaceLogin(){
+  const v=$('faceVideo');
+  if(!v || !v.videoWidth){ toast('เปิดกล้องก่อน','err'); return; }
+  const c=$('faceCanvas');
+  c.width=v.videoWidth; c.height=v.videoHeight;
+  c.getContext('2d').drawImage(v,0,0);
+  const fp=imageFingerprint(c);
+  const thumb=c.toDataURL('image/jpeg',0.7);
+  $('facePreview').src=thumb; $('facePreview').style.display='block';
+  stopFaceCam();
+
+  if(!hasFaceEnrolled()){
+    $('loginErr').textContent='ยังไม่ได้ลงทะเบียนใบหน้า — ใช้รหัสผ่าน';
+    showPinFallback();
+    return;
+  }
+  const dist=fpDistance(fp, auth.faceFp);
+  if(dist < FACE_MATCH_THRESHOLD){
+    $('loginErr').textContent='';
+    toast('สแกนใบหน้าสำเร็จ ✓');
+    unlockApp();
+  } else {
+    $('loginErr').textContent=`ไม่ตรงกับใบหน้าที่ลงทะเบียน (คะแนน ${dist.toFixed(1)}) — ลองใหม่หรือใช้รหัส`;
+    toast('สแกนไม่ผ่าน — ใช้รหัสผ่านได้','err');
+    showPinFallback();
+  }
+}
+
+function showPinFallback(){
+  const pinArea=$('pinLoginArea');
+  if(pinArea) pinArea.style.display='block';
+  const link=$('togglePinLink');
+  if(link) link.style.display='none';
+}
+
+function togglePinFallback(){
+  showPinFallback();
+  $('loginPin') && $('loginPin').focus();
+}
+
+/* Face setup during first registration */
+async function startFaceSetupCam(){
+  try{
+    stopFaceSetupCam();
+    faceSetupStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+    const v=$('faceSetupVideo');
+    v.srcObject=faceSetupStream; v.style.display='block'; await v.play();
+    $('faceSetupPreview').style.display='none';
+    $('btnCaptureFaceSetup').style.display='block';
+    $('btnStopFaceSetup').style.display='block';
+    $('faceSetupStatus').textContent='จัดใบหน้าให้อยู่กลาง แล้วกดบันทึก';
+  }catch(e){
+    $('faceSetupStatus').textContent='เปิดกล้องไม่ได้ — ข้ามขั้นตอนนี้ได้';
+    toast('เปิดกล้องไม่ได้','err');
+  }
+}
+function captureFaceSetup(){
+  const v=$('faceSetupVideo');
+  if(!v || !v.videoWidth){ toast('เปิดกล้องก่อน','err'); return; }
+  const c=$('faceSetupCanvas');
+  c.width=v.videoWidth; c.height=v.videoHeight;
+  c.getContext('2d').drawImage(v,0,0);
+  pendingFaceFp=imageFingerprint(c);
+  pendingFaceThumb=c.toDataURL('image/jpeg',0.7);
+  $('faceSetupPreview').src=pendingFaceThumb; $('faceSetupPreview').style.display='block';
+  stopFaceSetupCam();
+  $('faceSetupStatus').textContent='✓ บันทึกใบหน้าเรียบร้อย (จะใช้ตอนเข้าใช้ครั้งถัดไป)';
+  toast('ลงทะเบียนใบหน้าแล้ว');
+}
+
+/* Face manage in Settings */
+async function startFaceManageCam(){
+  try{
+    stopFaceManageCam();
+    faceManageStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+    const v=$('faceManageVideo');
+    v.srcObject=faceManageStream; v.style.display='block'; await v.play();
+    $('faceManagePreview').style.display='none';
+    $('btnCaptureFaceManage').style.display='block';
+    $('btnStopFaceManage').style.display='block';
+  }catch(e){ toast('เปิดกล้องไม่ได้','err'); }
+}
+function captureFaceManage(){
+  const v=$('faceManageVideo');
+  if(!v || !v.videoWidth){ toast('เปิดกล้องก่อน','err'); return; }
+  const c=$('faceManageCanvas');
+  c.width=v.videoWidth; c.height=v.videoHeight;
+  c.getContext('2d').drawImage(v,0,0);
+  auth.faceFp=imageFingerprint(c);
+  auth.faceThumb=c.toDataURL('image/jpeg',0.7);
+  saveAuth();
+  $('faceManagePreview').src=auth.faceThumb; $('faceManagePreview').style.display='block';
+  stopFaceManageCam();
+  updateFaceStatusUI();
+  toast('บันทึกใบหน้าใหม่แล้ว');
+}
+function removeFace(){
+  if(!confirm('ลบใบหน้าที่ลงทะเบียน? จะต้องใช้รหัสผ่านเท่านั้น')) return;
+  auth.faceFp=null; auth.faceThumb=null; saveAuth();
+  updateFaceStatusUI();
+  toast('ลบใบหน้าแล้ว');
+}
+function updateFaceStatusUI(){
+  const box=$('faceStatusBox');
+  const btnRemove=$('btnRemoveFace');
+  if(!box) return;
+  if(hasFaceEnrolled()){
+    box.className='tip';
+    box.innerHTML='✅ มีใบหน้าลงทะเบียนแล้ว — สามารถสแกนเข้าใช้ได้'+(auth.faceThumb?`<br><img src="${auth.faceThumb}" style="width:64px;height:64px;border-radius:12px;object-fit:cover;margin-top:8px">`:'');
+    if(btnRemove) btnRemove.style.display='block';
+  } else {
+    box.className='tip warn';
+    box.innerHTML='ยังไม่มีใบหน้าลงทะเบียน — กดปุ่มด้านล่างเพื่อเพิ่ม';
+    if(btnRemove) btnRemove.style.display='none';
+  }
+}
+
+function showAuthPanel(name){
+  stopFaceCam(); stopFaceSetupCam();
+  ['Login','Setup','Recover'].forEach(p=>{const el=$('panel'+p);if(el)el.classList.toggle('on',p.toLowerCase()===name)});
+  const titles={
+    login:['เข้าสู่ระบบ', hasFaceEnrolled() ? 'สแกนใบหน้าหรือใส่รหัสเพื่อเปิดใช้แอป' : 'ใส่รหัสเพื่อเปิดใช้แอปฟาร์มปูนา'],
+    setup:['ตั้งรหัสครั้งแรก','ตั้งรหัสและวันเกิด + ลงทะเบียนใบหน้า (แนะนำ)'],
+    recover:['กู้รหัสผ่าน','ยืนยันวันเกิดแล้วตั้งรหัสใหม่']
+  };
+  const t=titles[name]||titles.login;
+  $('authTitle').textContent=t[0];
+  $('authSub').textContent=t[1];
+  ['loginErr','setupErr','recoverErr'].forEach(id=>{const e=$(id);if(e)e.textContent=''});
+
+  // ปรับ UI ตามว่ามีใบหน้าหรือไม่
+  if(name==='login'){
+    const faceArea=$('faceLoginArea');
+    const pinArea=$('pinLoginArea');
+    const toggleLink=$('togglePinLink');
+    if(hasFaceEnrolled()){
+      if(faceArea) faceArea.style.display='block';
+      if(pinArea) pinArea.style.display='none';
+      if(toggleLink){ toggleLink.style.display='block'; toggleLink.textContent='ใช้รหัสผ่านแทน'; }
+      if($('authIcon')) $('authIcon').textContent='👤';
+    } else {
+      if(faceArea) faceArea.style.display='none';
+      if(pinArea) pinArea.style.display='block';
+      if(toggleLink) toggleLink.style.display='none';
+      if($('authIcon')) $('authIcon').textContent='🔐';
+    }
+  }
+  if(name==='setup'){
+    pendingFaceFp=null; pendingFaceThumb=null;
+    if($('faceSetupStatus')) $('faceSetupStatus').textContent='';
+    if($('faceSetupPreview')) $('faceSetupPreview').style.display='none';
+  }
+}
+
+function unlockApp(){
+  unlocked=true;
+  stopFaceCam(); stopFaceSetupCam(); stopFaceManageCam();
+  const gate=$('authGate');
+  if(gate){ gate.classList.add('hidden'); gate.style.display='none'; }
+  try{ load(); }catch(e){ console.error('load',e); }
+  try{ seed(); }catch(e){ console.error('seed',e); }
+  document.querySelectorAll('.page').forEach(pg=>{
+    pg.classList.remove('active');
+    pg.style.display='none';
+  });
+  const home=$('page-home');
+  if(home){
+    home.classList.add('active');
+    home.style.display='block';
+  }
+  document.querySelectorAll('.nav-i').forEach(n=>n.classList.toggle('on', n.dataset.p==='home'));
+  if($('subTitle')) $('subTitle').textContent='พันธุ์พระเทพ';
+  try{ renderHome(); }catch(e){ console.error('renderHome',e); }
+  try{ startAlarmLoop(); }catch(e){}
+  try{ window.scrollTo(0,0); }catch(e){}
+}
+
+function doLogout(){
+  if(!confirm('ออกจากระบบ?'))return;
+  unlocked=false;
+  stopFaceCam(); stopFaceManageCam();
+  if($('loginPin')) $('loginPin').value='';
+  if($('loginErr')) $('loginErr').textContent='';
+  showAuthPanel('login');
+  const g=$('authGate');
+  if(g){ g.classList.remove('hidden'); g.style.display='flex'; }
+  toast('ออกจากระบบแล้ว');
+}
+
+function doSetup(){
+  const pin=$('setupPin').value.trim(),pin2=$('setupPin2').value.trim(),birth=$('setupBirth').value,err=$('setupErr');
+  if(pin.length<4||pin.length>12){err.textContent='รหัสต้อง 4–12 ตัว';return}
+  if(pin!==pin2){err.textContent='รหัสไม่ตรงกัน';return}
+  if(!birth){err.textContent='กรุณาใส่วันเกิด';return}
+  auth={
+    setup:true,
+    pinHash:hashPin(pin),
+    birth,
+    faceFp: pendingFaceFp || null,
+    faceThumb: pendingFaceThumb || null
+  };
+  saveAuth();
+  pendingFaceFp=null; pendingFaceThumb=null;
+  unlockApp();
+  toast(auth.faceFp ? 'ตั้งรหัส + ใบหน้าเรียบร้อย' : 'ตั้งรหัสเรียบร้อย (ยังไม่มีใบหน้า)');
+}
+
+function doLogin(){
+  const pin=$('loginPin').value.trim(),err=$('loginErr');
+  if(!pin){err.textContent='กรุณาใส่รหัส';return}
+  if(hashPin(pin)!==auth.pinHash){err.textContent='รหัสไม่ถูกต้อง';return}
+  $('loginPin').value='';
+  unlockApp();
+}
+
+function doRecover(){
+  const birth=$('recoverBirth').value,pin=$('recoverPin').value.trim(),pin2=$('recoverPin2').value.trim(),err=$('recoverErr');
+  if(!birth){err.textContent='กรุณาใส่วันเกิด';return}
+  if(birth!==auth.birth){err.textContent='วันเกิดไม่ตรง';return}
+  if(pin.length<4||pin.length>12){err.textContent='รหัสใหม่ต้อง 4–12 ตัว';return}
+  if(pin!==pin2){err.textContent='รหัสไม่ตรงกัน';return}
+  auth.pinHash=hashPin(pin);
+  saveAuth();
+  toast('ตั้งรหัสใหม่แล้ว');
+  showAuthPanel('login');
+}
+
+// เรียก updateFaceStatusUI เมื่อเข้า settings
+const _origGo = typeof go==='function' ? go : null;
+// override go เล็กน้อยสำหรับ settings
+const originalGo = go;
+go = function(name){
+  originalGo(name);
+  if(name==='settings'){
+    setTimeout(updateFaceStatusUI, 50);
+  }
+};
+
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Enter'||unlocked)return;
+  if($('panelLogin') && $('panelLogin').classList.contains('on')){
+    // ถ้า pin area แสดงอยู่ค่อย login ด้วยรหัส
+    if($('pinLoginArea') && $('pinLoginArea').style.display!=='none') doLogin();
+  }
+  else if($('panelSetup') && $('panelSetup').classList.contains('on')) doSetup();
+  else if($('panelRecover') && $('panelRecover').classList.contains('on')) doRecover();
+});
+
+loadAuth();
+if(!auth.setup) showAuthPanel('setup');
+else showAuthPanel('login');
+</script>
+</body>
+</html>
